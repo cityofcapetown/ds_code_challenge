@@ -19,4 +19,4 @@ NOTE: If you would like to _improve_ the content of this repository, by fixing t
 
 ## Contact
 
-You can contact riaz.arbi, gordon.inggs and/or colin.anthony2 @ capetown.gov.za
+You can contact riaz.arbi, gordon.inggs and/or colinscott.anthony @ capetown.gov.za
