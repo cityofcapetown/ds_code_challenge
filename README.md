@@ -12,7 +12,7 @@ We will only evaluate responses to this challenge from people who we have reques
 
 ## Way of working and expected structure of submission
 
-Our primary programming languages are `python` and `R`. We will accept code that is packaged in `py`, `.ipynb`, `.R` and `.Rmd` files. You may develop in any development environment you choose. 
+Our primary programming languages are `python` and `R`. We will accept code that is packaged in `py`, `.ipynb`, `.R` and `.Rmd` files. Bash is also fine for glue. You may develop in any development environment you choose. 
 
 Principles of reproducible analysis and code versioning are very important to our workflow. Structuring your repo to aid in reproducibility and readability is important - so follow common conventions with respect to directory structure and names.
 
