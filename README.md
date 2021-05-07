@@ -6,7 +6,26 @@ The purpose of this challenge is to evaluate the skills of prospective Data Scie
 
 ## Intended audience
 
-we will only evaluate responses to this challenge from people who we have requested to complete it. Of course, you are welcome to attempt it for your own enjoyment.
+We will only evaluate responses to this challenge from people who we have requested to complete it. Of course, you are welcome to attempt it for your own enjoyment.
+
+## Challenge
+
+## Way of working and expected structure of submission
+
+Our primary programming languages are `python` and `R`. We will accept code that is packaged in `py`, `.ipynb`, `.R` and `.Rmd` files. You may develop in any development environment you choose. 
+
+Principles of reproducible analysis and code versioning are very important to our workflow. Structuring your repo to aid in reproducibility and readability is important - so follow common conventions with respect to directory structure and names.
+
+We expect to be able to clone your repo, immediately identify what script to execute from your README file, and execute it to completion with no human interaction. In order to ensure that our environment has the right libraries or packages, please follow standard python or R guidelines for structurein your code, i.e place `import` and `library()` commands at the top of your script.
+
+If your repo does not clone and run, we will not attempt to fix it.
+
+If your analysis makes use of any external data, the data must either be included in the repo, or be downloaded automatically during script execution.
+
+### Expected result for evaluation
+* The final output of the execution of your code should be a self contained `html` file or executed `ipynb` file that is your report.* 
+ 
+A statistically minded layperson should be able to read this report and follow your analysis without guidance. 
 
 ## How to submit
 
