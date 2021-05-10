@@ -8,6 +8,29 @@ The purpose of this challenge is to evaluate the skills of prospective Data Scie
 
 We will only evaluate responses to this challenge from people who we have requested to complete it. Of course, you are welcome to attempt it for your own enjoyment.
 
+
+## Way of working and expected structure of submission
+
+Our primary programming languages are `python` and `R`. We will accept code that is packaged in `py`, `.ipynb`, `.R` and `.Rmd` files. Bash is also fine for glue. You may develop in any development environment you choose. 
+
+Principles of reproducible analysis and code versioning are very important to our workflow. Structuring your repo to aid in reproducibility and readability is important - so follow common conventions with respect to directory structure and names.
+
+We expect to be able to clone your repo, immediately identify what script to execute from your README file, and execute it to completion with no human interaction. In order to ensure that our environment has the right libraries or packages, please follow standard python or R guidelines for structurein your code, i.e place `import` and `library()` commands at the top of your script.
+
+If your repo does not clone and run, we will not attempt to fix it.
+
+If your analysis makes use of any external data, the data must either be included in the repo, or be downloaded automatically during script execution.
+
+
+## How to submit
+
+1. Fork this repository and clone it to your development environment. 
+2. Work the challenge, committing regularly to document your progress.
+3. Push back to your github remote.
+4. Inform us via email that your challenge is complete, including a link to your repo. Be sure to make sure it is set to public.
+
+NOTE: If you would like to _improve_ the content of this repository, by fixing typos or perhaps enhancing the challenge, please do so by submitting a merge request.
+
 ## Challenge
 
 For all roles, we expect the challenge response to include what you consider to be role-appropriate testing and validation. For instance, a Data Scientist might want to include MAPE scores or confusion matrices. A Data Engineer may want to include logging and data quality validation tests. A Data Analyst might want to plot histograms of request counts to ensure that outliers aren't overwhelming your analysis.
@@ -52,27 +75,6 @@ We've also made available an S3 readonly bucket at this location. [Insert here]
  
 Your code should be well formatted according to generally accepted style guides and include enough commentary for a team-mate unfamiliar with your code to maintain it in your absence.
 
-## Way of working and expected structure of submission
-
-Our primary programming languages are `python` and `R`. We will accept code that is packaged in `py`, `.ipynb`, `.R` and `.Rmd` files. Bash is also fine for glue. You may develop in any development environment you choose. 
-
-Principles of reproducible analysis and code versioning are very important to our workflow. Structuring your repo to aid in reproducibility and readability is important - so follow common conventions with respect to directory structure and names.
-
-We expect to be able to clone your repo, immediately identify what script to execute from your README file, and execute it to completion with no human interaction. In order to ensure that our environment has the right libraries or packages, please follow standard python or R guidelines for structurein your code, i.e place `import` and `library()` commands at the top of your script.
-
-If your repo does not clone and run, we will not attempt to fix it.
-
-If your analysis makes use of any external data, the data must either be included in the repo, or be downloaded automatically during script execution.
-
-
-## How to submit
-
-1. Fork this repository and clone it to your development environment. 
-2. Work the challenge, committing regularly to document your progress.
-3. Push back to your github remote.
-4. Inform us via email that your challenge is complete, including a link to your repo. Be sure to make sure it is set to public.
-
-NOTE: If you would like to _improve_ the content of this repository, by fixing typos or perhaps enhancing the challenge, please do so by submitting a merge request.
 
 ## Contact
 
