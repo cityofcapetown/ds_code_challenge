@@ -45,7 +45,7 @@ We've provided an uber H3 geoJSON resolution level 8, 9 and 10 file for the City
 
 We've also made available an S3 readonly bucket at this location. [Insert here]
 
-1. Create a script which uses AWS S3 SELECT syntax to read in H3 resolution 8 data, joins it to the service request dataset, selects a subset of columns, and writes it to the writeonly bucket. Be sure to name your output file something that is recognizable as your work. Include logging that lets the executor know how many of the records failed to join, and include a join error threshold above which the script will error out. 
+1. Create a script which uses AWS S3 SELECT syntax to read in H3 resolution 8 data. Joins it to the service request dataset, select a subset of columns, and write it to the writeonly bucket. Be sure to name your output file something that is recognizable as your work. Include logging that lets the executor know how many of the records failed to join, and include a join error threshold above which the script will error out. 
 2. Write a script which anonymizes the sr file, but preserves location accuracy to within approximately 500m, temporal accuracy to within 6 hours, and scrubs any columns which may contain personally identifiable information. You may use H3 indexes or lat/lon coordinates for your spatial data.
 
 **The final output of the execution of your code should be `R`, `python` or `bash` script(s).** 
