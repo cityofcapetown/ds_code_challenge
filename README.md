@@ -10,13 +10,15 @@ We will only evaluate responses to this challenge from people who we have reques
 
 ## Challenge
 
+For all roles, we expect the challenge response to include what you consider to be role-appropriate testing and validation. For instance, a Data Scientist might want to include MAPE scores or confusion matrices. A Data Engineer may want to include logging and data quality validation tests. A Data Analyst might want to plot histograms of request counts to ensure that outliers aren't overwhelming your analysis.
+
 ### If you are interviewing for a Data Science role
 
 In the `data` directory you will find two datasets. `data/sr.csv` contains 36 months of service request data, where each row is a service request. `data/sal.zip` contains Shapefiles of City of Cape Town small area layers. 
 
-1. Time series challenge: predict the weekly number of expected service requests per small area for the next 4 weeks
-2. Introspection challenge: reshape the data into number of requests per small area in the last 12 months. augment this data with any data you may find that is relevant. predict the number of requests from this augmented data. determine the drivers of requests of that particular type.
-3. Classification challenge: classify a small area layer as formal, informal or rural based on the data derived from the service request data. We'll need to pre-classify the SALs.
+1. Time series challenge: Predict the weekly number of expected service requests per small area for the next 4 weeks.
+2. Introspection challenge: Reshape the data into number of requests per small area in the last 12 months. Augment this data with any data you may find that is relevant. Predict the number of requests from this augmented data. Determine the drivers of requests of that particular type.
+3. Classification challenge: Classify a small area layer as formal, informal or rural based on the data derived from the service request data. NOTE TO CCT: We'll need to pre-classify the SALs.
 
 Feel free to use any other data you can find in the public domain.
 
