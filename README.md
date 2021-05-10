@@ -22,12 +22,20 @@ In the `data` directory you will find two datasets. `data/sr.csv` contains 36 mo
 
 Feel free to use any other data you can find in the public domain.
 
+**The final output of the execution of your code should be a self contained `html` file or executed `ipynb` file that is your report.** 
+ 
+A statistically minded layperson should be able to read this report and follow your analysis without guidance. 
+
 ### If you are interviewing for a Data Analyst role
 
 In the `data` directory you will find a file called `data/sr_sal.csv`. It contains 36 months of service request data, where each row is a service request. The column titled 'SAL' contains the name of the Census 2011 Small Area that the particular request falls under.
 
 1. Provide a visual answer to the question "which areas and request types should Electricity concentrate on to reduce the overall volume of their requests". You may use Jupyter, Rstudio, Excel, PowerBI or Tableau.
 2. Provide a working prototype dashboard for monitoring progress in reducing Electricity service request volume per area and per type.
+
+**The final output of the execution of your code should be a self contained `html` file ,executed `ipynb` file, Excel document with appropriate formatting and pivot tables, or PowerBI file.** 
+ 
+An Executive-level person should be able to read this report and follow your analysis without guidance. 
 
 ### If you are interviewing for a Data Engineer role
 
@@ -39,6 +47,10 @@ We've also made available an S3 readonly bucket at this location. [Insert here]
 
 1. Create a script which uses AWS S3 SELECT syntax to read in H3 resolution 8 data, joins it to the service request dataset, selects a subset of columns, and writes it to the writeonly bucket. Be sure to name your output file something that is recognizable as your work. Include logging that lets the executor know how many of the records failed to join, and include a join error threshold above which the script will error out. 
 2. Write a script which anonymizes the sr file, but preserves location accuracy to within approximately 500m, temporal accuracy to within 6 hours, and scrubs any columns which may contain personally identifiable information. You may use H3 indexes or lat/lon coordinates for your spatial data.
+
+**The final output of the execution of your code should be `R`, `python` or `bash` script(s).** 
+ 
+Your code should be well formatted according to generally accepted style guides and include enough commentary for a team-mate unfamiliar with your code to maintain it in your absence.
 
 ## Way of working and expected structure of submission
 
@@ -52,10 +64,6 @@ If your repo does not clone and run, we will not attempt to fix it.
 
 If your analysis makes use of any external data, the data must either be included in the repo, or be downloaded automatically during script execution.
 
-### Expected result for evaluation
-**The final output of the execution of your code should be a self contained `html` file or executed `ipynb` file that is your report.** 
- 
-A statistically minded layperson should be able to read this report and follow your analysis without guidance. 
 
 ## How to submit
 
