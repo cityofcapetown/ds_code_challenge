@@ -23,7 +23,7 @@ If your repo does not clone and run, we will not attempt to fix it.
 If your analysis makes use of any external data, the data must either be included in the repo, or be downloaded automatically during script execution.
 
 ### Expected result for evaluation
-* The final output of the execution of your code should be a self contained `html` file or executed `ipynb` file that is your report.* 
+*The final output of the execution of your code should be a self contained `html` file or executed `ipynb` file that is your report.* 
  
 A statistically minded layperson should be able to read this report and follow your analysis without guidance. 
 
