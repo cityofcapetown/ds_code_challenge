@@ -64,8 +64,8 @@ In some of the tasks below you will be creating datasets that are similar to the
 
 ### 1. Data Extraction (if applying for Data Engineering Positions)
 We have made two resources available remotely:
-* A GeoJSON file that contains the level 8, 9 and 10 resolution hexagons for the City of Cape Town at [this location](insert readonly object url).
-* An AWS S3 writeonly bucket at [this location](Insert here).
+* A GeoJSON file that contains the level 8, 9 and 10 resolution hexagons for the City of Cape Town at [this location](https://cct-ds-code-challenge-input-data.s3.af-south-1.amazonaws.com/city-hex-polygons-8-10.geojson) (bucket name is `cct-ds-code-challenge-input-data`, object name is `city-hex-polygons-8-10.geojson`, region is `af-south-1`).
+* An AWS S3 writeonly bucket at [this location](https://cct-ds-code-challenge-output-data.s3.af-south-1.amazonaws.com/) (bucket name is `cct-ds-code-challenge-output-data`).
 
 Using [AWS S3 SELECT](https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-glacier-select-sql-reference-select.html) syntax to read in H3 resolution 8 data from this file. Use the `city-hex-polygons-8.geojson` file to validate your work.
 
@@ -99,7 +99,7 @@ A statistically minded layperson should be able to read this report and follow y
 
 Please log the time taken to perform the operations described, and within reason, try to optimise latency and computation resources used.
 
-### 5. Further Data Transformations (if applying Data Engineering Positions)
+### 5. Further Data Transformations (if applying for Data Engineering Positions)
 Write a script which anonymises the `sr.csv` file, but preserves the following resolutions (You may use H3 indexes or lat/lon coordinates for your spatial data):
    * location accuracy to within approximately 500m 
    * temporal accuracy to within 6 hours
