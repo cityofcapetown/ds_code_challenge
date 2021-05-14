@@ -37,6 +37,8 @@ You can use any tool to produce the output, e.g. Python, R, Excel, Power BI, Tab
 3. Host your repository somewhere that is publicly accessible. If you're using GitHub, please use a fork of our original repository.
 4. Inform us via email that your challenge is complete, including a link to your repo. Be sure to make sure it is set to public.
 
+**Be sure to 'watch' this repo for changes - we may push bugfixes**
+
 NOTE: If you would like to _improve_ the content of this repository, by fixing typos or perhaps enhancing the challenge, please do so by submitting a merge request.
 
 ### Candidates where programming is not required (Data Analysts)
