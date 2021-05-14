@@ -71,14 +71,14 @@ Using [AWS S3 SELECT](https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-g
 
 Please log the time taken to perform the operations described, and within reason, try to optimise latency and computational resources used.
 
-### 2. Initial Data Transformation (if applying for Data Engineering and Science Positions)
+### 2. Initial Data Transformation (if applying for Data Engineering and/or Science Positions)
 Join the file `city-hex-polygons-8.geojson` to the service request dataset, such that each service request is assigned to a single H3 hexagon. Use the `sr_hex.csv` file to validate your work.
 
 For any requests where the `Latitude` and `Longitude` fields are empty, set the index value to `0`.
 
 Include logging that lets the executor know how many of the records failed to join, and include a join error threshold above which the script will error out. Please also log the time taken to perform the operations described, and within reason, try to optimise latency and computational resources used.
 
-### 3. Descriptive Analytic Tasks (if applying for Data Science and Analyst Positions)
+### 3. Descriptive Analytic Tasks (if applying for Data Science and/or Analyst Positions)
 Please provide the following:
 1. Provide a visual answer to the question "which areas and request types should Electricity concentrate on to reduce the overall volume of their requests".
 2. Provide a working prototype dashboard for monitoring progress in reducing Electricity service request volume per area, and per type.
