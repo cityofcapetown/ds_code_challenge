@@ -54,20 +54,19 @@ For all roles, we expect the challenge response to include what you consider to 
 Your code should be well formatted according to generally accepted style guides and include whatever is necessary for a team-mate unfamiliar with it to maintain it.
 
 ### 0. Setup
-In the `data` directory you will the following datasets:
-* `sr.csv` contains 36 months of service request data, where each row is a service request. A service request is a request from one of the residents of the City of Cape Town to undertake significant work. This is an important source of information on service delivery, and our performance thereof.
-* `city-hex-polygons-8.geojson` contains polygons and index values for the [H3 spatial indexing system](https://h3geo.org/) for the bounds of the City of Cape Town, at resolution level 8.
-* `sr_hex.csv` contains the same data as `sr.csv` as well as a column `h3_level8_index`, which contains the appropriate resolution level 8 H3 index for that request. If the request doesn't have a valid geolocation, the index value will be `0`.
-* `sr_hex_truncated.csv` is a truncated version of `sr_hex.csv`, containing only 3 months of data.
+We have made the following datasets available (each filename is a link). These are all available in an AWS bucket `cct-ds-code-challenge-input-data`, in the `af-south-1` region, with the object name being the filenames below):
+* [`sr.csv.gz`](https://cct-ds-code-challenge-input-data.s3.af-south-1.amazonaws.com/sr.csv.gz) contains 36 months of service request data, where each row is a service request. A service request is a request from one of the residents of the City of Cape Town to undertake significant work. This is an important source of information on service delivery, and our performance thereof. *Note* as indicated by the extension, this file is compressed.
+* [`sr_hex.csv.gz`](https://cct-ds-code-challenge-input-data.s3.af-south-1.amazonaws.com/sr_hex.csv.gz) contains the same data as `sr.csv` as well as a column `h3_level8_index`, which contains the appropriate resolution level 8 H3 index for that request. If the request doesn't have a valid geolocation, the index value will be `0`. *Note* as indicated by the extension, this file is compressed.
+* [`sr_hex_truncated.csv`](https://cct-ds-code-challenge-input-data.s3.af-south-1.amazonaws.com/sr_hex_truncated.csv) is a truncated version of `sr_hex.csv`, containing only 3 months of data.
+* [`city-hex-polygons-8.geojson`](https://cct-ds-code-challenge-input-data.s3.af-south-1.amazonaws.com/city-hex-polygons-8.geojson) contains the [H3 spatial indexing system](https://h3geo.org/) polygons and index values for the bounds of the City of Cape Town, at resolution level 8.
+* [`city-hex-polygons-8-10.geojson`](https://cct-ds-code-challenge-input-data.s3.af-south-1.amazonaws.com/city-hex-polygons-8-10.geojson) contains the [H3 spatial indexing system](https://h3geo.org/) polygons and index values for resolution levels 8, 9 and 10, for the City of Cape Town.
+
+*Note* Some of these files are large, so start downloading as soon as possible.
 
 In some of the tasks below you will be creating datasets that are similar to these, feel free to use them to validate your work.
 
 ### 1. Data Extraction (if applying for a Data Engineering Position)
-We have made two resources available remotely:
-* A GeoJSON file that contains the level 8, 9 and 10 resolution hexagons for the City of Cape Town at [this location](https://cct-ds-code-challenge-input-data.s3.af-south-1.amazonaws.com/city-hex-polygons-8-10.geojson) (bucket name is `cct-ds-code-challenge-input-data`, object name is `city-hex-polygons-8-10.geojson`, region is `af-south-1`).
-* An AWS S3 writeonly bucket at [this location](https://cct-ds-code-challenge-output-data.s3.af-south-1.amazonaws.com/) (bucket name is `cct-ds-code-challenge-output-data`).
-
-Use the [AWS S3 SELECT](https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-glacier-select-sql-reference-select.html) command to read in H3 resolution 8 data from this file. Use the `city-hex-polygons-8.geojson` file to validate your work.
+Use the [AWS S3 SELECT](https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-glacier-select-sql-reference-select.html) command to read in the H3 resolution 8 data from `city-hex-polygons-8-10.geojson`. Use the `city-hex-polygons-8.geojson` file to validate your work.
 
 Please log the time taken to perform the operations described, and within reason, try to optimise latency and computational resources used.
 
