@@ -26,10 +26,9 @@ Requirements and notes:
 * If your analysis makes use of any external data, the data must either be included in the repo, or be downloaded automatically during script execution.
 
 ### Candidates where programming is not required (Data Analysts)
-*NB* If you prefer, you may submit using the requirements described above.
+*Note* If you prefer, you may submit using the requirements described above.
 
-The final output of your analysis should be either a self-contained `html` file, executed `ipynb` file, 
-Excel document with appropriate formatting and pivot tables, or a PowerBI file.
+You can use any tool to produce the output, e.g. Excel, Power BI, Tableau, etc. The final deliverable needs to be a pdf report with your analysis.
 
 ## How to submit
 ### Candidates where programming is required (Data Scientist and Engineers)
@@ -59,33 +58,38 @@ In the `data` directory you will the following datasets:
 * `sr.csv` contains 36 months of service request data, where each row is a service request. A service request is a request from one of the residents of the City of Cape Town to undertake significant work. This is an important source of information on service delivery, and our performance thereof.
 * `city-hex-polygons-8.geojson` contains polygons and index values for the [H3 spatial indexing system](https://h3geo.org/) for the bounds of the City of Cape Town, at resolution level 8.
 * `sr_hex.csv` contains the same data as `sr.csv` as well as a column `h3_level8_index`, which contains the appropriate resolution level 8 H3 index for that request. If the request doesn't have a valid geolocation, the index value will be `0`.
+* `sr_hex_truncated.csv` is a truncated version of `sr_hex.csv`, containing only 3 months of data.
 
 In some of the tasks below you will be creating datasets that are similar to these, feel free to use them to validate your work.
 
-### 1. Data Extraction (if applying for Data Engineering Positions)
+### 1. Data Extraction (if applying for a Data Engineering Position)
 We have made two resources available remotely:
 * A GeoJSON file that contains the level 8, 9 and 10 resolution hexagons for the City of Cape Town at [this location](https://cct-ds-code-challenge-input-data.s3.af-south-1.amazonaws.com/city-hex-polygons-8-10.geojson) (bucket name is `cct-ds-code-challenge-input-data`, object name is `city-hex-polygons-8-10.geojson`, region is `af-south-1`).
 * An AWS S3 writeonly bucket at [this location](https://cct-ds-code-challenge-output-data.s3.af-south-1.amazonaws.com/) (bucket name is `cct-ds-code-challenge-output-data`).
 
-Using [AWS S3 SELECT](https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-glacier-select-sql-reference-select.html) syntax to read in H3 resolution 8 data from this file. Use the `city-hex-polygons-8.geojson` file to validate your work.
+Use the [AWS S3 SELECT](https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-glacier-select-sql-reference-select.html) command to read in H3 resolution 8 data from this file. Use the `city-hex-polygons-8.geojson` file to validate your work.
 
 Please log the time taken to perform the operations described, and within reason, try to optimise latency and computational resources used.
 
-### 2. Initial Data Transformation (if applying for Data Engineering and/or Science Positions)
+### 2. Initial Data Transformation (if applying for a Data Engineering and/or Science Position)
 Join the file `city-hex-polygons-8.geojson` to the service request dataset, such that each service request is assigned to a single H3 hexagon. Use the `sr_hex.csv` file to validate your work.
 
 For any requests where the `Latitude` and `Longitude` fields are empty, set the index value to `0`.
 
 Include logging that lets the executor know how many of the records failed to join, and include a join error threshold above which the script will error out. Please also log the time taken to perform the operations described, and within reason, try to optimise latency and computational resources used.
 
-### 3. Descriptive Analytic Tasks (if applying for Data Science and/or Analyst Positions)
+### 3. Descriptive Analytic Tasks (if applying for a Data Analyst Position)
+Please use the `sr_hex_truncated.csv` dataset to address the following.
+
 Please provide the following:
 1. Provide a visual answer to the question "which areas and request types should Electricity concentrate on to reduce the overall volume of their requests".
 2. Provide a working prototype dashboard for monitoring progress in reducing Electricity service request volume per area, and per type.
  
 An Executive-level person should be able to read this report and follow your analysis without guidance.
 
-### 4. Predictive Analytic Tasks (if applying for Data Science Positions)
+### 4. Predictive Analytic Tasks (if applying for a Data Science Position)
+Please use `sr_hex.csv` dataset, only looking at requests from the `Water and Sanitation Services` department.
+
 Please chose two of the following:
 1. *Time series challenge*: Predict the weekly number of expected service requests per hex for the next 4 weeks.
 2. *Introspection challenge*: Reshape the data into number of requests, per type, per hex in the last 12 months. Chose a particular request type, or group of requests. Develop a model that predicts the number of requests of your selected type, using the rest of your data. Based upon the model, and any other analysis, determine the drivers of requests of that particular type(s).
@@ -95,19 +99,19 @@ Feel free to use any other data you can find in the public domain, except for ta
 
 **The final output of the execution of your code should be a self-contained `html` file or executed `ipynb` file that is your report.** 
  
-A statistically minded layperson should be able to read this report and follow your analysis without guidance.https://h3geo.org/
+A statistically minded layperson should be able to read this report and follow your analysis without guidance.
 
 Please log the time taken to perform the operations described, and within reason, try to optimise latency and computation resources used.
 
-### 5. Further Data Transformations (if applying for Data Engineering Positions)
-Write a script which anonymises the `sr.csv` file, but preserves the following resolutions (You may use H3 indexes or lat/lon coordinates for your spatial data):
+### 5. Further Data Transformations (if applying for a Data Engineering Position)
+Write a script which anonymises the `sr_hex.csv` file, but preserves the following resolutions (You may use H3 indexes or lat/lon coordinates for your spatial data):
    * location accuracy to within approximately 500m 
    * temporal accuracy to within 6 hours
    * scrubs any columns which may contain personally identifiable information.
 
-We expect in the accompanying report that follows you will justify as to why this data is now anonymised.
+We expect in the accompanying report that follows you will justify as to why this data is now anonymised. Please limit this commentary to less than 500 words. If your code is written in a code notebook such as Jupyter notebook or Rmarkdown, you can include this commentary in your notebook.
 
-### 6. Data Loading Tasks (if applying for Data Engineering Positions)
+### 6. Data Loading Tasks (if applying for a Data Engineering Position)
 Select a subset of columns (including the H3 index column) from the `sr_hex.csv` or the anonymised file created in the task above, and write it to the write-only S3 bucket. 
 
 Be sure to name your output file something that is recognisable as your work, and unlikely to collide with the names of others.
