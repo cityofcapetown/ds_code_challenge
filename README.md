@@ -28,7 +28,7 @@ Requirements and notes:
 ### Candidates where programming is not required (Data Analysts)
 *Note* If you prefer, you may submit using the requirements described above.
 
-You can use any tool to produce the output, e.g. Excel, Power BI, Tableau, etc. The final deliverable needs to be a pdf report with your analysis.
+You can use any tool to produce the output, e.g. Python, R, Excel, Power BI, Tableau, etc. The final deliverable needs to be a pdf report with your analysis.
 
 ## How to submit
 ### Candidates where programming is required (Data Scientist and Engineers)
