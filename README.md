@@ -16,9 +16,14 @@ Principles of reproducible analysis and code versioning are very important to ou
 
 So, follow common conventions with respect to directory structure and names to make your work as easy to follow as possible.
 
+## Expectation of Effort
+We expect you to spend up to 48 calendar hours working on this assessment per position. If you are finding that you spending significantly more time than this, then please contact whomever sent you the link to this assessment to let them know.
+
+You should have received over 7 days warning that you would be undertaking this assesment. Please notify [Delyno du Toit](delyno.dutoit@capetown.gov.za) if this was not the case.
+
 ### Candidates where programming is required (Data Scientist and Engineers)
 Requirements and notes:
-* Our primary programming languages are `python` and `R`. We will accept code that is packaged in `py`, `.ipynb`, `.R` and `.Rmd` files. 
+* Our primary programming languages are `python` and `R`. We will accept code that is packaged in `.py`, `.ipynb`, `.R` and `.Rmd` files. 
 * Bash or similar scripting language files are fine for glue. You may develop in any development environment you choose. 
 * We expect to be able to clone your repo, immediately identify what script to execute from your README file, and execute it to completion with no human interaction. 
   In order to ensure that our environment has the right libraries or packages, please follow standard python (PEP8) or R guidelines for structure in your code, i.e place `import` and `library()` commands at the top of your scripts.
