@@ -72,13 +72,11 @@ Your code should be well formatted according to generally accepted style guides 
 ### 0. Setup
 #### Data
 We have made the following datasets available (each filename is a link). These are all available in an AWS bucket `cct-ds-code-challenge-input-data`, in the `af-south-1` region, with the object name being the filenames below):
-* [`sr.csv.gz`](https://cct-ds-code-challenge-input-data.s3.af-south-1.amazonaws.com/sr.csv.gz) contains 36 months of service request data, where each row is a service request. A service request is a request from one of the residents of the City of Cape Town to undertake significant work. This is an important source of information on service delivery, and our performance thereof. *Note* as indicated by the extension, this file is compressed.
+* [`sr.csv.gz`](https://cct-ds-code-challenge-input-data.s3.af-south-1.amazonaws.com/sr.csv.gz) contains 12 months of service request data, where each row is a service request. A service request is a request from one of the residents of the City of Cape Town to undertake significant work. This is an important source of information on service delivery, and our performance thereof. *Note* as indicated by the extension, this file is compressed.
 * [`sr_hex.csv.gz`](https://cct-ds-code-challenge-input-data.s3.af-south-1.amazonaws.com/sr_hex.csv.gz) contains the same data as `sr.csv` as well as a column `h3_level8_index`, which contains the appropriate resolution level 8 H3 index for that request. If the request doesn't have a valid geolocation, the index value will be `0`. *Note* as indicated by the extension, this file is compressed.
 * [`sr_hex_truncated.csv`](https://cct-ds-code-challenge-input-data.s3.af-south-1.amazonaws.com/sr_hex_truncated.csv) is a truncated version of `sr_hex.csv`, containing only 3 months of data.
 * [`city-hex-polygons-8.geojson`](https://cct-ds-code-challenge-input-data.s3.af-south-1.amazonaws.com/city-hex-polygons-8.geojson) contains the [H3 spatial indexing system](https://h3geo.org/) polygons and index values for the bounds of the City of Cape Town, at resolution level 8.
 * [`city-hex-polygons-8-10.geojson`](https://cct-ds-code-challenge-input-data.s3.af-south-1.amazonaws.com/city-hex-polygons-8-10.geojson) contains the [H3 spatial indexing system](https://h3geo.org/) polygons and index values for resolution levels 8, 9 and 10, for the City of Cape Town.
-
-*Note* Some of these files are large, so start downloading as soon as possible.
 
 In some of the tasks below you will be creating datasets that are similar to these, feel free to use the provided files to validate your work.
 
@@ -103,18 +101,23 @@ Include logging that lets the executor know how many of the records failed to jo
 Please use the `sr_hex_truncated.csv` dataset to address the following.
 
 Please provide the following:
-1. An answer to the question "In which suburbs should Water and Sanitation concentrate their infrastructure improvement efforts?". Please motivate how you related the data provided to infrastructure issues.
-2. Provide a visual mock of a dashboard for the purpose of monitoring progress in applying the insights developed in (1). Please provide an explanation as to how the data provided would be used to realise what is contained in your mock.
+1. An answer to the question "In which suburbs should the Water and Sanitation directorate concentrate their infrastructure improvement efforts?". Please motivate how you related the data provided to infrastructure issues.
+2. Provide a visual mock of a dashboard for the purpose of monitoring progress in applying the insights developed in (1). It should focus the user on  performance pain points. Add a note for each visual element, explaining how it helps fulfill this overall function. Please also provide a brief explanation as to how the data provided would be used to realise what is contained in your mock.
+3. Identify value-adding insights for the management of Water and Sanitation, from the dataset provided, with regards to water provision within the City.
  
 An Executive-level, non-specialist person should be able to read this report and follow your analysis without guidance.
 
 ### 4. Predictive Analytic Tasks (if applying for a Data Science Position)
 Using the `sr_hex.csv` dataset, please chose __two__ of the following:
 1. *Time series challenge*: Predict the weekly number of expected service requests per hex that will be created each week, for the next 4 weeks.
-2. *Introspection challenge*: Reshape the data into number of requests created, per type, per hex in the last 12 months. Chose a particular request type, or group of requests. Develop a model that predicts the number of requests of your selected type, using the rest of your data. Based upon the model, and any other analysis, determine the drivers of requests of that particular type(s).
-3. *Classification challenge*: Classify a hex as sparsly or densely populated, solely based on the service request data. Provide an explantion as to how you're using the data to perform this classification.
-4. *Anomaly Detection challenge*: Reshape the data into the number of requests created per department, per day. Please identify any days in the past 6 months where an anamolous number of requests were created for a particular department. Please describe how you would motivate to the director of that department why they should investigate that anamoly. Your argument should rely upon the contents of the dataset and/or your anamoly detection model.
-
+2. *Introspection challenge*: 
+  1. Reshape the data into number of requests created, per type, per H3 level 8 hex in the last 12 months. 
+  2. Choose a type, and then develop a model that predicts the number of requests of that type per hex.
+  3. Use the model developed in (2) to predict the number in (1).
+  4. Based upon the model, and any other analysis, determine the drivers of requests of that particular type(s).
+3. *Classification challenge*: Classify a hex as sparsely or densely populated, solely based on the service request data. Provide an explanation as to how you're using the data to perform this classification. Using your classifier, please highlight any unexpected or unusual classifications, and comment on why that might be the case.
+4. *Anomaly Detection challenge*: Reshape the data into the number of requests created per department, per day. Please identify any days in the first 6 months of 2020 where an anomalous number of requests were created for a particular department. Please describe how you would motivate to the director of that department why they should investigate that anomaly. Your argument should rely upon the contents of the dataset and/or your anomaly detection model.
+2
 Feel free to use any other data you can find in the public domain, except for task (3).
 
 **The final output of the execution of your code should be a self-contained `html` file or executed `ipynb` file that is your report.** 
@@ -124,10 +127,13 @@ A statistically minded layperson should be able to read this report and follow y
 Please log the time taken to perform the operations described, and within reason, try to optimise latency and computation resources used. Please also note the comments above with respect to the nature of work that we expect from data scientists.
 
 ### 5. Further Data Transformations (if applying for a Data Engineering Position)
-Write a script which anonymises the `sr_hex.csv` file, but preserves the following precisions (You may use H3 indexes or lat/lon coordinates for your spatial data):
-   * location accuracy to within approximately 500m 
+1. Create a subsample of the data by selecting all of the requests in `sr_hex.csv.gz` which are within 1 minute of the centroid of the BELLVILLE SOUTH official suburb. You may determine the centroid of the suburb by the method of your choice, but if any external data is used, your code should programmatically download and perform the centroid calculation. Please clearly document your method.
+
+2. Augment your filtered subsample of `sr_hex.csv.gz` from (1) with the appropriate [wind direction and speed data for 2020](https://www.capetown.gov.za/_layouts/OpenDataPortalHandler/DownloadHandler.ashx?DocumentName=Wind_direction_and_speed_2020.ods&DatasetDocument=https%3A%2F%3Fcityapps.capetown.gov.za%2Fsites%2Fopendatacatalog%2FDocuments%2FWind%2FWind_direction_and_speed_2020.ods) from the Bellville South Air Quality Measurement site, from when the notification was created. All of the steps for downloading and preparing the wind data, as well as the join should be performed programmatically within your script.
+
+3. Write a script which anonymises your augmented subsample from (2), but preserves the following precisions (You may use H3 indice or lat/lon coordinates for your spatial data):
+   * location accuracy to within approximately 500m
    * temporal accuracy to within 6 hours
- 
 Please also remove any columns which you believe could lead to the resident who made the request being identified. We expect in the accompanying report that you will justify as to why this data is now anonymised. Please limit this commentary to less than 500 words. If your code is written in a code notebook such as Jupyter notebook or Rmarkdown, you can include this commentary in your notebook.
 
 Please also note the comments above about the nature of the code that we expect.
