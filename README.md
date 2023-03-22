@@ -44,7 +44,7 @@ Requirements and notes:
 You can use any tool to produce the output, e.g. Python, R, Excel, Power BI, Tableau, etc. The final deliverable needs to be a pdf report with your analysis.
 
 ## How to submit
-### Candidates where programming is required (Data Scientist and Engineers)
+### Candidates where programming is required (Data Scientist;  Engineers and Visualization Engineers)
 1. Clone this repository and load it into your development environment. 
 2. Work the challenge, committing regularly to document your progress. Try have structured, meaningful commits, where each one adds significant functionality in a coherent manner.
 3. Host your repository somewhere that is publicly accessible. If you're using GitHub, please use a fork of our original repository.
@@ -135,6 +135,22 @@ Please log the time taken to perform the operations described, and within reason
    * location accuracy to within approximately 500m
    * temporal accuracy to within 6 hours
 Please also remove any columns which you believe could lead to the resident who made the request being identified. We expect in the accompanying report that you will justify as to why this data is now anonymised. Please limit this commentary to less than 500 words. If your code is written in a code notebook such as Jupyter notebook or Rmarkdown, you can include this commentary in your notebook.
+
+### 6. Data Visualization Task (if applying for a Data Visualization Engineering Position)
+
+Using the `sr_hex_truncated.csv` dataset and open source web development technologies, develop a data visualization / dashboard that help to answer the question:
+
+*"In which suburbs should the Water and Sanitation directorate concentrate their infrastructure improvement efforts?".*
+
+The data visualization / dashboard must include the following:
+
+1.    A chart (plot) or charts (plots) that helps to answer the above question.
+2.    A spatial map that helps to answer the above question.
+3.    Make (1) and (2) interactive to allow users to explore the data and uncover insights
+4.    Cross filtering: a filter on the map must update the chart(s) accordingly with the filter, and vice versa.
+5.    Data Storytelling: use the dataset to create a data-driven story, using visualizations to support your narrative.
+6.    Design Principles: Can you explain why you have chosen certain colors (e.g. for legends), fonts, the layout or anything else that will help us understand your thinking in designing the data visualization / dashboard.
+7.    Publish your work using online service like https://pages.github.com/ or anything other means you are familiar with.  We want to see the end product and interact with it.
 
 Please also note the comments above about the nature of the code that we expect.
 
