@@ -150,7 +150,7 @@ The data visualization / dashboard must include the following:
 4.    Cross filtering: a filter on the map must update the chart(s) accordingly with the filter, and vice versa.
 5.    Data Storytelling: use the dataset to create a data-driven story, using visualizations to support your narrative.
 6.    Design Principles: Can you explain why you have chosen certain colors (e.g. for legends), fonts, the layout or anything else that will help us understand your thinking in designing the data visualization / dashboard.
-7.    Publish your work using online service like https://pages.github.com/ or anything other means you are familiar with.  We want to see the end product and interact with it.
+7.    Publish your work using online service like https://pages.github.com/ or usinf any other means you are familiar with.  We want to see the end product and interact with it.
 
 Please also note the comments above about the nature of the code that we expect.
 
