@@ -29,7 +29,7 @@ Over and and above the tasks specified below, there are particular aspects of ea
 * Data Engineer candidates - as the key enablers of our unit's work, we really want to see work done in a sustainable manner: writing for easy comprehension, testing, clean code, modularity all bring us joy.
 * Data Analyst candidates - we consider success for our analysts when they provide the insights that inform actual decisions. Hence, we want evidence of both the ability to surface these insights from data, as well as the rhetorical skill in conveying the implications thereof. Your audience is intelligent, but non-specialist.
 
-### Candidates where programming is required (Data Scientist and Engineers)
+### Candidates where programming is required (Data Scientist; Engineers & Visualisation Engineer)
 Requirements and notes:
 * Our primary programming languages are `python` and `R`. We will accept code that is packaged in `.py`, `.ipynb`, `.R` and `.Rmd` files. 
 * Bash or similar scripting language files are fine for glue. You may develop in any development environment you choose. 
@@ -44,7 +44,7 @@ Requirements and notes:
 You can use any tool to produce the output, e.g. Python, R, Excel, Power BI, Tableau, etc. The final deliverable needs to be a pdf report with your analysis.
 
 ## How to submit
-### Candidates where programming is required (Data Scientist;  Engineers and Visualization Engineers)
+### Candidates where programming is required (Data Scientist;  Engineers and Visualisation Engineers)
 1. Clone this repository and load it into your development environment. 
 2. Work the challenge, committing regularly to document your progress. Try have structured, meaningful commits, where each one adds significant functionality in a coherent manner.
 3. Host your repository somewhere that is publicly accessible. If you're using GitHub, please use a fork of our original repository.
@@ -136,16 +136,16 @@ Please log the time taken to perform the operations described, and within reason
    * temporal accuracy to within 6 hours
 Please also remove any columns which you believe could lead to the resident who made the request being identified. We expect in the accompanying report that you will justify as to why this data is now anonymised. Please limit this commentary to less than 500 words. If your code is written in a code notebook such as Jupyter notebook or Rmarkdown, you can include this commentary in your notebook.
 
-### 6. Data Visualization Task (if applying for a Data Visualization Engineering Position)
+### 6. Data Visualisation Task (if applying for a Data Visualisation Engineering Position)
 
-Using the `sr_hex_truncated.csv` dataset and open source web development technologies, develop a data visualization / dashboard that help to answer the question:
+Using the `sr_hex_truncated.csv` dataset and open source web technologies, develop a data visualisation / dashboard that help to answer the question:
 
 *"In which suburbs should the Water and Sanitation directorate concentrate their infrastructure improvement efforts?".*
 
-The data visualization / dashboard must include the following:
+The data visualisation / dashboard must include the following:
 
 1.    A chart (plot) or charts (plots) that helps to answer the above question.
-2.    A spatial map that helps to answer the above question.
+2.    A cartographic map with identifiable landmark features (e.g. major roads, railways, etc.)
 3.    Make (1) and (2) interactive to allow users to explore the data and uncover insights
 4.    Cross plot brushing: a filter on the map must update the chart(s) accordingly with the filter, and vice versa.
 5.    Data Storytelling: in a separate markdown document, use the dataset and your visualisations to outline a data-driven story that answers the above question. In your document, describe how your visualisations support your narrative.
