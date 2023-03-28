@@ -150,7 +150,7 @@ The data visualization / dashboard must include the following:
 4.    Cross plot brushing: a filter on the map must update the chart(s) accordingly with the filter, and vice versa.
 5.    Data Storytelling: in a separate markdown document, use the dataset and your visualisations to outline a data-driven story that answers the above question. In your document, describe how your visualisations support your narrative.
 6.    Design Principles: Can you explain why you have chosen certain colors (e.g. for legends), fonts, the layout or anything else that will help us understand your thinking in designing the data visualization / dashboard.
-7.    Publish your work using online service like https://pages.github.com/ or usinf any other means you are familiar with.  We want to see the end product and interact with it.
+7.    Publish your work using an online service such as https://pages.github.com/ or any other means you are familiar with.  Anyone with an Internet connection and a modern browser such as Google Chrome, Mozilla Firefox or Microsoft Edge, should be able to see the end product and interact with it. Please reference the published link in the `README.md` of your repository.
 
 Please also note the comments above about the nature of the code that we expect.
 
