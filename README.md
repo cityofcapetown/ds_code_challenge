@@ -147,7 +147,7 @@ The data visualization / dashboard must include the following:
 1.    A chart (plot) or charts (plots) that helps to answer the above question.
 2.    A spatial map that helps to answer the above question.
 3.    Make (1) and (2) interactive to allow users to explore the data and uncover insights
-4.    Cross filtering: a filter on the map must update the chart(s) accordingly with the filter, and vice versa.
+4.    Cross plot brushing: a filter on the map must update the chart(s) accordingly with the filter, and vice versa.
 5.    Data Storytelling: in a separate markdown document, use the dataset and your visualisations to outline a data-driven story that answers the above question. In your document, describe how your visualisations support your narrative.
 6.    Design Principles: Can you explain why you have chosen certain colors (e.g. for legends), fonts, the layout or anything else that will help us understand your thinking in designing the data visualization / dashboard.
 7.    Publish your work using online service like https://pages.github.com/ or usinf any other means you are familiar with.  We want to see the end product and interact with it.
