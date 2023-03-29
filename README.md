@@ -150,7 +150,7 @@ A chart (plot) or charts (plots) that helps to answer the above question.
 2.    A cartographic map with identifiable landmark features (e.g. major roads, railways, etc.)
 3.    Make (1) and (2) interactive to allow users to explore the data and uncover insights
 4.    Cross plot brushing: a filter on the map must update the chart(s) accordingly with the filter, and vice versa.
-5.    Data Storytelling: in a separate markdown document, use the dataset and your visualisations to outline a data-driven story that answers the above question. In your document, describe how your visualisations support your narrative.
+5.    Data Storytelling: in a separate markdown document, titled `data-driven-storytelling.md`, provide a brief, step-by-step, point form description of how your visualisations (and information from the dataset) outline a data-driven story that answers the above question.
 6.    Design Principles: In a separate markdown document, please explain why you have chosen certain colours (e.g. for legends), fonts, the layout or anything else that will help us understand your thinking in designing the data visualisation / dashboard to answer the question.
 7.    Publish your work using an online service such as https://pages.github.com/ or any other means you are familiar with.  Anyone with an Internet connection and a modern browser such as Google Chrome, Mozilla Firefox or Microsoft Edge, should be able to see the end product and interact with it. Please reference the published link in the `README.md` of your repository.
 
