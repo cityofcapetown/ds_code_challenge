@@ -139,14 +139,13 @@ Please also remove any columns which you believe could lead to the resident who 
 
 ### 6. Data Visualisation Task (if applying for a Data Visualisation Engineering Position)
 
-Using the `sr_hex_truncated.csv` dataset and open source web technologies, develop a data visualisation / dashboard that help to answer the question:
+Complete **TASK 2 - Initial Data Transformation** and use the constructed dataset and open source web technologies, to develop a data visualisation / dashboard that help to answer the question:
 
 *"In which suburbs should the Water and Sanitation directorate concentrate their infrastructure improvement efforts?".*
 
 The data visualisation / dashboard must include the following:
 
-1.    Complete **TASK 2 - Initial Data Transformation** and use the dataset to complete the tasks below.  
-A chart (plot) or charts (plots) that helps to answer the above question.
+1.    A chart (plot) or charts (plots) that helps to answer the above question.
 2.    A cartographic map with identifiable landmark features (e.g. major roads, railways, etc.)
 3.    Make (1) and (2) interactive to allow users to explore the data and uncover insights
 4.    Cross plot brushing: a filter on the map must update the chart(s) accordingly with the filter, and vice versa.
