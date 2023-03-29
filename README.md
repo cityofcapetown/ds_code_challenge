@@ -31,7 +31,8 @@ Over and and above the tasks specified below, there are particular aspects of ea
 
 ### Candidates where programming is required (Data Scientist; Engineers & Visualisation Engineer)
 Requirements and notes:
-* Our primary programming languages are `python` and `R`. We will accept code that is packaged in `.py`, `.ipynb`, `.R` and `.Rmd` files. 
+* For Data Science and Data Engineering, our primary programming languages are `python`, `R` and `SQL`. We will accept code that is packaged in `.py`, `.ipynb`, `.R` and `.Rmd` files. Scripts in `.sql` may also be included where applicable.
+* Data Visualisation engineers should have knowledge of either `python` or `R`, and relevant front-end programming languages (e.g. Javascript, HTML, CSS). We will accept code that is packaged in `.py`, `.R` and appropriate front-end programming language specific files, e.g. `.js`, `.html` etc.
 * Bash or similar scripting language files are fine for glue. You may develop in any development environment you choose. 
 * We expect to be able to clone your repo, immediately identify what script to execute from your README file, and execute it to completion with no human interaction. 
   In order to ensure that our environment has the right libraries or packages, please follow standard python (PEP8) or R guidelines for structure in your code, i.e place `import` and `library()` commands at the top of your scripts.
