@@ -90,7 +90,7 @@ Use the [AWS S3 SELECT](https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3
 
 Please log the time taken to perform the operations described, and within reason, try to optimise latency and computational resources used. Please also note the comments above about the nature of the code that we expect.
 
-### 2. Initial Data Transformation (if applying for a Data Engineering and/or Science Position)
+### 2. Initial Data Transformation (if applying for a Data Engineering and/or Science Position and Visualisation Engineer)
 Join the equivalent of the contents of the file `city-hex-polygons-8.geojson` to the service request dataset, such that each service request is assigned to a single H3 resolution level 8 hexagon. Use the `sr_hex.csv` file to validate your work.
 
 For any requests where the `Latitude` and `Longitude` fields are empty, set the index value to `0`.
@@ -144,7 +144,8 @@ Using the `sr_hex_truncated.csv` dataset and open source web technologies, devel
 
 The data visualisation / dashboard must include the following:
 
-1.    A chart (plot) or charts (plots) that helps to answer the above question.
+1.    Complete **TASK 2 - Initial Data Transformation** and use the dataset to complete the tasks below.  
+A chart (plot) or charts (plots) that helps to answer the above question.
 2.    A cartographic map with identifiable landmark features (e.g. major roads, railways, etc.)
 3.    Make (1) and (2) interactive to allow users to explore the data and uncover insights
 4.    Cross plot brushing: a filter on the map must update the chart(s) accordingly with the filter, and vice versa.
