@@ -29,9 +29,10 @@ Over and and above the tasks specified below, there are particular aspects of ea
 * Data Engineer candidates - as the key enablers of our unit's work, we really want to see work done in a sustainable manner: writing for easy comprehension, testing, clean code, modularity all bring us joy.
 * Data Analyst candidates - we consider success for our analysts when they provide the insights that inform actual decisions. Hence, we want evidence of both the ability to surface these insights from data, as well as the rhetorical skill in conveying the implications thereof. Your audience is intelligent, but non-specialist.
 
-### Candidates where programming is required (Data Scientist and Engineers)
+### Candidates where programming is required (Data Scientist; Engineers & Visualisation Engineer)
 Requirements and notes:
-* Our primary programming languages are `python` and `R`. We will accept code that is packaged in `.py`, `.ipynb`, `.R` and `.Rmd` files. 
+* For Data Science and Data Engineering, our primary programming languages are `python`, `R` and `SQL`. We will accept code that is packaged in `.py`, `.ipynb`, `.R` and `.Rmd` files. Scripts in `.sql` may also be included where applicable.
+* Data Visualisation engineers should have knowledge of either `python` or `R`, and relevant front-end programming languages (e.g. Javascript, HTML, CSS). We will accept code that is packaged in `.py`, `.R` and appropriate front-end programming language specific files, e.g. `.js`, `.html` etc.
 * Bash or similar scripting language files are fine for glue. You may develop in any development environment you choose. 
 * We expect to be able to clone your repo, immediately identify what script to execute from your README file, and execute it to completion with no human interaction. 
   In order to ensure that our environment has the right libraries or packages, please follow standard python (PEP8) or R guidelines for structure in your code, i.e place `import` and `library()` commands at the top of your scripts.
@@ -44,7 +45,7 @@ Requirements and notes:
 You can use any tool to produce the output, e.g. Python, R, Excel, Power BI, Tableau, etc. The final deliverable needs to be a pdf report with your analysis.
 
 ## How to submit
-### Candidates where programming is required (Data Scientist and Engineers)
+### Candidates where programming is required (Data Scientist;  Engineers and Visualisation Engineers)
 1. Clone this repository and load it into your development environment. 
 2. Work the challenge, committing regularly to document your progress. Try have structured, meaningful commits, where each one adds significant functionality in a coherent manner.
 3. Host your repository somewhere that is publicly accessible. If you're using GitHub, please use a fork of our original repository.
@@ -90,8 +91,8 @@ Use the [AWS S3 SELECT](https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3
 
 Please log the time taken to perform the operations described, and within reason, try to optimise latency and computational resources used. Please also note the comments above about the nature of the code that we expect.
 
-### 2. Initial Data Transformation (if applying for a Data Engineering and/or Science Position)
-Join the equivalent of the contents of the file `city-hex-polygons-8.geojson` to the service request dataset, such that each service request is assigned to a single H3 resolution level 8 hexagon. Use the `sr_hex.csv` file to validate your work.
+### 2. Initial Data Transformation (if applying for a Data Engineering and/or Science Position and Visualisation Engineer)
+Join the equivalent of the contents of the file `city-hex-polygons-8.geojson` to the service request dataset, such that each service request is assigned to a single H3 resolution level 8 hexagon. Use the `sr_hex.csv.gz` file to validate your work.
 
 For any requests where the `Latitude` and `Longitude` fields are empty, set the index value to `0`.
 
@@ -135,6 +136,22 @@ Please log the time taken to perform the operations described, and within reason
    * location accuracy to within approximately 500m
    * temporal accuracy to within 6 hours
 Please also remove any columns which you believe could lead to the resident who made the request being identified. We expect in the accompanying report that you will justify as to why this data is now anonymised. Please limit this commentary to less than 500 words. If your code is written in a code notebook such as Jupyter notebook or Rmarkdown, you can include this commentary in your notebook.
+
+### 6. Data Visualisation Task (if applying for a Data Visualisation Engineering Position)
+
+Using the [`sr_hex.csv.gz`](https://cct-ds-code-challenge-input-data.s3.af-south-1.amazonaws.com/sr_hex.csv.gz) dataset and open source web technologies, develop a data visualisation / dashboard that help to answer the question:
+
+*"In which suburbs should the Water and Sanitation directorate concentrate their infrastructure improvement efforts?".*
+
+The data visualisation / dashboard must include the following:
+
+1.    A chart (plot) or charts (plots) that helps to answer the above question.
+2.    A cartographic map with identifiable landmark features (e.g. major roads, railways, etc.)
+3.    Make (1) and (2) interactive to allow users to explore the data and uncover insights
+4.    Cross plot brushing: a filter on the map must update the chart(s) accordingly with the filter, and vice versa.
+5.    Data Storytelling: in a separate markdown document, titled `data-driven-storytelling.md`, provide a brief, step-by-step, point form description of how your visualisations (and information from the dataset) outline a data-driven story that answers the above question.
+6.    Design Principles: In a separate markdown document, titled `visualisation-design-choices.md`, please provide a brief, point form explanation for why you have chosen certain colours (e.g. for legends), fonts, the layout or anything else that will help us understand your thinking in designing the data visualisation / dashboard to answer the question.
+7.    Publish your work using an online service such as https://pages.github.com/ or any other means you are familiar with.  Anyone with an Internet connection and a modern browser such as Google Chrome, Mozilla Firefox or Microsoft Edge, should be able to see the end product and interact with it. Please reference the published link to your visualisation tool in the `README.md` of your repository.
 
 Please also note the comments above about the nature of the code that we expect.
 
