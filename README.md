@@ -1,7 +1,7 @@
 
 <img src="img/city_emblem.png" alt="City Logo"/>
 
-# City of Cape Town - Data Science Unit Code Challenge
+# City of Cape Town - Data Science: Data Analyst Code Challenge
 
 ## Purpose
 
@@ -32,40 +32,39 @@ You can use any tool to produce the output, e.g. Python, R, Excel, Power BI, Tab
 
 ## How to submit
 1. Download this repository using the Code -> `Download ZIP` option in the top right-hand corner.
-2. Add your work into this folder.
-3. Create a ZIP file of the folder, with all of your work in it.
-4. Send us an email, with your archived project attached. If it is larger than 10 MB, then share it via a cloud storage service such as DropBox, and include the link in your email. 
+2. Download the data from the link below
+3. Carry out your analysis and add your work into this folder.
+6. Create a ZIP file of this folder, with all of your work in it.
+7. Send us an email, attaching your the above ZIP file. If it is larger than 10 MB, then share it via a cloud storage service such as DropBox, and include the link in your email. 
 
 ## Challenge
 ### Data
-We have made the following dataset available (the filename is a link). It is available in an AWS bucket `cct-ds-code-challenge-input-data`.
-* [`assessment-data-analyst-sample-data.csv`](https://cct-budgets-code-challenge-input-data.s3.amazonaws.com/opm.assessment-data-analyst-sample-data.csv)
+We have made the following dataset available (the filename is a link). It is available in an AWS bucket [`assessment-data-analyst-sample-data.csv`](https://cct-budgets-code-challenge-input-data.s3.amazonaws.com/opm.assessment-data-analyst-sample-data.csv)
 
 #### Background to the dataset
 A virement is defined as the process of transferring an approved budgetary provision from one operating cost element or capital approval object to another within a vote or tariff service during a municipal financial year
 
-#### 1. Descriptive Analytic Tasks (if applying for a Data Analyst Position)
-Please use the `assessment-data-analyst-sample-data.csv` dataset to address the following.
-
-The dataset contains the annual budget allocations, and annual virement movements, for various departments and branches of the organisation, broken down by budget `category` and `sub_category` (also referred to as `cost centres` and `cost elements` respectively) over 5 financial years.
+The dataset contains the annual budget allocations, and annual virement movements, for various departments and branches of the organisation, broken down by budget `cost_centre` (`category`) and `cost_element` (`sub_category`) (also referred to as `cost centres` and `cost elements` respectively) over 5 financial years.
 
 **this dataset was generated for the purpose of this exercise and should not be taken to reflect the actual budget allocations within the City of Cape Town**
 
-For the sake of this exercise, assume that the movement of funds after the allocation of the budget (`amount_sent`, `amount_received`) represents an inefficient budget allocation (this is an oversimplification, but will suffice for this exercise).
+#### 1. Descriptive Analytic Tasks (if applying for a Data Analyst Position)
+Please use the above [dataset](https://cct-budgets-code-challenge-input-data.s3.amazonaws.com/opm.assessment-data-analyst-sample-data.csv) to complete this task.
 
-For this exercise, assume that `efficient`/`inefficient` refers to how well/poorly the original budget forecasted the actual amount needed for that category/sub-category.
+For the sake of this exercise, assume that the movement of funds after the allocation of the budget (`amount_sent`, `amount_received`) represents an inefficient budget allocation (this is an oversimplification, but will suffice for this exercise), and that `efficient`/`inefficient` refers to how well/poorly the original budget forecasted the actual amount needed for that `cost centre`/`cost-element`.
 
-##### Please provide a "dashboard", in pdf format, that reflects following:
+##### Outputs
+**Please provide a "dashboard", in pdf format, that reflects following:**
 * a high level view of the trends over time for the net amount sent as a total amount, and as a percentage of the original budget:
-  * at the `departement` level
-  * at the `category` level
-  * at the `sub_category` level
-* Provide a view of the departments with the highest proportion of `net amount sent` over the last 3 years
-* Provide a view of the departments with the highest proportion of `net amount received` over the last 3 years
+  * at the `directorate` level
+  * at the `cost centre` level
+  * at the `cost-element` level
+* Provide a view of the top 5 departments with the highest proportion of `net amount sent` over the last 3 years
+* Provide a view of the top 5 departments with the highest proportion of `net amount received` over the last 3 years
 * Show the top 5 budget categories (and separetely the top 5 budget sub-categories) taking into account the trends over the past 3 years, for:
   1) the most efficient budget allocations, and
   2) the least efficient budget allocations
-
+ 
 Please include a short text/narrative description of your interpretations/analysis for each of the graphs above
 
 Your dashboard should also include an `Executive-level summary` section of your analysis and findings. A non-specialist/technical person should be able to understand this summary without additional guidance.
