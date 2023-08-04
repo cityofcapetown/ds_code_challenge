@@ -48,12 +48,12 @@ The dataset contains the annual budget allocations, and annual virement "movemen
 
 **this dataset was generated for the purpose of this exercise and should not be taken to reflect the actual budget allocations within the City of Cape Town**
 
-#### 1. Descriptive Analytic Tasks (if applying for a Data Analyst Position)
+### 1. Descriptive Analytic Tasks (if applying for a Data Analyst Position)
 Please use the above [dataset](https://cct-budgets-code-challenge-input-data.s3.amazonaws.com/opm.assessment-data-analyst-sample-data.csv) to complete this task.
 
 For the sake of this exercise, assume that the movement of funds after the allocation of the budget (`amount_sent`, `amount_received`) represents an inefficient budget allocation (this is an oversimplification, but will suffice for this exercise), and that `efficient`/`inefficient` refers to how well/poorly the original budget forecasted the actual amount needed for that `cost centre`/`cost-element`.
 
-##### Outputs
+#### Outputs
 **Please provide a "dashboard", in pdf format, that reflects following:**
 * a high level view of the trends over time for the net amount sent, as a total amount, and as a percentage of the original budget:
   * at the `directorate` level
