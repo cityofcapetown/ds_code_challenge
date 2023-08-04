@@ -23,9 +23,9 @@ We expect you to spend up to 48 hours working on this assessment. If you are fin
 You should have received over 7 days warning that you would be undertaking this assesment. Please notify [Delyno du Toit](delyno.dutoit@capetown.gov.za) if this was not the case.
 
 ### Things to focus on
-Over and and above the tasks specified below, there are particular aspects of each position that we would like you to pay attention to:
+Over and above the tasks specified below, there are particular aspects that we would like you to pay attention to:
 
-* Data Analyst candidates - we consider success for our analysts when they provide the insights that inform actual decisions. Hence, we want evidence of both the ability to surface these insights from data, as well as the rhetorical skill in conveying the implications thereof. Your audience is intelligent, but non-specialist.
+* Data Analyst candidates - we weight success by the degree to which the insights and analysis provided can inform actual decisions. Hence, we want evidence of both the ability to surface these insights from data (trends and outliers), as well as the rhetorical skill in conveying the implications thereof (a clear narrative justified by your analysis and statistical measures). Your audience is intelligent, but not a "technical-specialist".
 
 ### Submission outline
 You can use any tool to produce the output, e.g. Python, R, Excel, Power BI, Tableau, etc. The final deliverable needs to be a pdf report with your analysis.
@@ -42,9 +42,9 @@ You can use any tool to produce the output, e.g. Python, R, Excel, Power BI, Tab
 We have made the following dataset available (the filename is a link). It is available in an AWS bucket [`assessment-data-analyst-sample-data.csv`](https://cct-budgets-code-challenge-input-data.s3.amazonaws.com/opm.assessment-data-analyst-sample-data.csv)
 
 #### Background to the dataset
-A virement is defined as the process of transferring an approved budgetary provision from one operating cost element or capital approval object to another within a vote or tariff service during a municipal financial year
+A virement is defined as the process of transferring an approved budgetary provision from one operating `cost element` to another within a municipal financial year. 
 
-The dataset contains the annual budget allocations, and annual virement movements, for various departments and branches of the organisation, broken down by budget `cost_centre` (`category`) and `cost_element` (`sub_category`), over 5 financial years.
+The dataset contains the annual budget allocations, and annual virement "movements", for various directorates, departments and branches of the organisation, broken down by budget `cost_centre` (`category`) and `cost_element` (`sub_category`), over 5 financial years.
 
 **this dataset was generated for the purpose of this exercise and should not be taken to reflect the actual budget allocations within the City of Cape Town**
 
@@ -55,19 +55,21 @@ For the sake of this exercise, assume that the movement of funds after the alloc
 
 ##### Outputs
 **Please provide a "dashboard", in pdf format, that reflects following:**
-* a high level view of the trends over time for the net amount sent as a total amount, and as a percentage of the original budget:
+* a high level view of the trends over time for the net amount sent, as a total amount, and as a percentage of the original budget:
   * at the `directorate` level
   * at the `cost centre` level
-  * at the `cost-element` level
+  * at the `cost element` level
 * Provide a view of the top 5 departments with the highest proportion of `net amount sent` over the last 3 years
 * Provide a view of the top 5 departments with the highest proportion of `net amount received` over the last 3 years
-* Show the top 5 budget categories (and separetely the top 5 budget sub-categories) taking into account the trends over the past 3 years, for:
+* Show the top 5 budget categories (and separetely the top 5 budget sub-categories), taking into account the trends over the past 3 years, for:
   1) the most efficient budget allocations, and
   2) the least efficient budget allocations
  
-Please include a short text/narrative description of your interpretations/analysis for each of the graphs above
-
 Your dashboard should also include an `Executive-level summary` section of your analysis and findings. A non-specialist/technical person should be able to understand this summary without additional guidance.
+
+Please include a short text/narrative description of your interpretations/analysis for each of the graphs above.
+
+Please also include any code, and/or spreadsheets used, and any intermediate analysis used to generate the dashboard, in your submission.
 
 ## Contact
 You can contact gordon.inggs and/or colinscott.anthony @ capetown.gov.za for any questions on the above.
