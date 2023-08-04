@@ -18,7 +18,7 @@ So, follow common conventions with respect to directory structure and names to m
 
 ## What we're looking for
 ### Expectation of Effort
-We expect you to spend up to 48 hours working on this assessment. If you are finding that you spending significantly more time than this, then please contact whomever sent you the link to this assessment to let them know.
+We expect this assessment to take no more than 24 hours. If you are finding that you spending significantly more time than this, then please contact whomever sent you the link to this assessment to let them know.
 
 You should have received over 7 days warning that you would be undertaking this assesment. Please notify [Delyno du Toit](delyno.dutoit@capetown.gov.za) if this was not the case.
 
