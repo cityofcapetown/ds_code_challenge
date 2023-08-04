@@ -18,7 +18,7 @@ So, follow common conventions with respect to directory structure and names to m
 
 ## What we're looking for
 ### Expectation of Effort
-We expect you to spend up to 48 calendar hours working on this assessment per position. If you are finding that you spending significantly more time than this, then please contact whomever sent you the link to this assessment to let them know.
+We expect you to spend up to 48 hours working on this assessment. If you are finding that you spending significantly more time than this, then please contact whomever sent you the link to this assessment to let them know.
 
 You should have received over 7 days warning that you would be undertaking this assesment. Please notify [Delyno du Toit](delyno.dutoit@capetown.gov.za) if this was not the case.
 
@@ -39,21 +39,21 @@ You can use any tool to produce the output, e.g. Python, R, Excel, Power BI, Tab
 ## Challenge
 ### 0. Setup
 #### Data
-We have made the following datasets available (each filename is a link). These are all available in an AWS bucket `cct-ds-code-challenge-input-data`, in the `af-south-1` region, with the object name being the filenames below):
+We have made the following dataset available (the filename is a link). It is available in an AWS bucket `cct-ds-code-challenge-input-data`.
 * [`assessment-data-analyst-sample-data.csv`](https://cct-ds-code-challenge-input-data.s3.af-south-1.amazonaws.com/assessment-data-analyst-sample-data.csv)
-
-#### Dummy AWS Credentials
-We have made AWS credentials available in the following file, with the appropriate permissions set, [here](https://cct-ds-code-challenge-input-data.s3.af-south-1.amazonaws.com/ds_code_challenge_creds.json).
-
-*Note* These creds don't have any special access, other than what is already set on these resources for anonymous access. These are more provided to make using the various AWS client libraries easier.
 
 ### 1. Descriptive Analytic Tasks (if applying for a Data Analyst Position)
 Please use the `assessment-data-analyst-sample-data.csv` dataset to address the following.
 
+The dataset contians the annual budget allocations, and annual virement movements, for various departments and branches of the organisation, broken down by budget `category` and `sub_category`. 
+
+For the sake of this exercise, assume that the movement of funds after the allocation of the budget (`amount_sent`, `amount_received`) represents a budgeting allocation inefficiency.
+
+Identify the top 5 budget sub-categories which have consistently had the lowest budget allocation efficiency over time, as well as the top 5 with the highest allocation efficiency.
+
 Please provide the following:
 
- 
-An Executive-level, non-specialist person should be able to read this report and follow your analysis without guidance.
+An Executive-level report, non-specialist person should be able to read this report and follow your graphs and analysis narrative without guidance.
 
 ## Contact
 You can contact gordon.inggs and/or colinscott.anthony @ capetown.gov.za for any questions on the above.
