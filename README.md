@@ -40,7 +40,7 @@ You can use any tool to produce the output, e.g. Python, R, Excel, Power BI, Tab
 ### 0. Setup
 #### Data
 We have made the following dataset available (the filename is a link). It is available in an AWS bucket `cct-ds-code-challenge-input-data`.
-* [`assessment-data-analyst-sample-data.csv`](https://cct-ds-code-challenge-input-data.s3.af-south-1.amazonaws.com/assessment-data-analyst-sample-data.csv)
+* [`assessment-data-analyst-sample-data.csv`](https://cct-budgets-code-challenge-input-data.s3.amazonaws.com/opm.assessment-data-analyst-sample-data.csv)
 
 ### 1. Descriptive Analytic Tasks (if applying for a Data Analyst Position)
 Please use the `assessment-data-analyst-sample-data.csv` dataset to address the following.
