@@ -63,13 +63,13 @@ For this exercise, assume that `efficient`/`inefficient` refers to how well/poor
   * at the `sub_category` level
 * Provide a view of the departments with the highest proportion of `net amount sent` over the last 3 years
 * Provide a view of the departments with the highest proportion of `net amount received` over the last 3 years
-* Show the top 5 budget categories (and separetely the top 5 budget sub-categories) taking into accunt the trends over the past 3 years, for:
+* Show the top 5 budget categories (and separetely the top 5 budget sub-categories) taking into account the trends over the past 3 years, for:
   1) the most efficient budget allocations, and
   2) the least efficient budget allocations
 
-Please include a short text/narrative description of your interpretations/analysis of the above the graphs above
+Please include a short text/narrative description of your interpretations/analysis for each of the graphs above
 
-Your dashboard should also include an `Executive-level summary` of your analysis and findings, that a non-specialist/technical person would be able to understand without additional guidance.
+Your dashboard should also include an `Executive-level summary` section of your analysis and findings. A non-specialist/technical person should be able to understand this summary without additional guidance.
 
 ## Contact
 You can contact gordon.inggs and/or colinscott.anthony @ capetown.gov.za for any questions on the above.
