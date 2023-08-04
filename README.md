@@ -44,7 +44,7 @@ We have made the following dataset available (the filename is a link). It is ava
 #### Background to the dataset
 A virement is defined as the process of transferring an approved budgetary provision from one operating cost element or capital approval object to another within a vote or tariff service during a municipal financial year
 
-The dataset contains the annual budget allocations, and annual virement movements, for various departments and branches of the organisation, broken down by budget `cost_centre` (`category`) and `cost_element` (`sub_category`) (also referred to as `cost centres` and `cost elements` respectively) over 5 financial years.
+The dataset contains the annual budget allocations, and annual virement movements, for various departments and branches of the organisation, broken down by budget `cost_centre` (`category`) and `cost_element` (`sub_category`), over 5 financial years.
 
 **this dataset was generated for the purpose of this exercise and should not be taken to reflect the actual budget allocations within the City of Cape Town**
 
