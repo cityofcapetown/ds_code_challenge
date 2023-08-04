@@ -33,7 +33,7 @@ You can use any tool to produce the output, e.g. Python, R, Excel, Power BI, Tab
 ## How to submit
 1. Download this repository using the Code -> `Download ZIP` option in the top right-hand corner.
 2. Add your work into this folder.
-3. Create a compressed archive file with all of your work in it.
+3. Create a ZIP file of the folder, with all of your work in it.
 4. Send us an email, with your archived project attached. If it is larger than 10 MB, then share it via a cloud storage service such as DropBox, and include the link in your email. 
 
 ## Challenge
@@ -42,18 +42,34 @@ You can use any tool to produce the output, e.g. Python, R, Excel, Power BI, Tab
 We have made the following dataset available (the filename is a link). It is available in an AWS bucket `cct-ds-code-challenge-input-data`.
 * [`assessment-data-analyst-sample-data.csv`](https://cct-budgets-code-challenge-input-data.s3.amazonaws.com/opm.assessment-data-analyst-sample-data.csv)
 
+### Background to the dataset
+A virement is defined as the process of transferring an approved budgetary provision from one operating cost element or capital approval object to another within a vote or tariff service during a municipal financial year
+
 ### 1. Descriptive Analytic Tasks (if applying for a Data Analyst Position)
 Please use the `assessment-data-analyst-sample-data.csv` dataset to address the following.
 
-The dataset contians the annual budget allocations, and annual virement movements, for various departments and branches of the organisation, broken down by budget `category` and `sub_category`. 
+The dataset contains the annual budget allocations, and annual virement movements, for various departments and branches of the organisation, broken down by budget `category` and `sub_category` (also referred to as `cost centres` and `cost elements` respectively) over 5 financial years.
 
-For the sake of this exercise, assume that the movement of funds after the allocation of the budget (`amount_sent`, `amount_received`) represents a budgeting allocation inefficiency.
+**this dataset was generated for the purpose of this exercise and should not be taken to reflect the actual budget allocations within the City of Cape Town**
 
-Identify the top 5 budget sub-categories which have consistently had the lowest budget allocation efficiency over time, as well as the top 5 with the highest allocation efficiency.
+For the sake of this exercise, assume that the movement of funds after the allocation of the budget (`amount_sent`, `amount_received`) represents an inefficient budget allocation (this is an oversimplification, but will suffice for this exercise).
 
-Please provide the following:
+For this exercise, assume that `efficient`/`inefficient` refers to how well/poorly the original budget forecasted the actual amount needed for that category/sub-category.
 
-An Executive-level report, non-specialist person should be able to read this report and follow your graphs and analysis narrative without guidance.
+#### Please provide a "dashboard", in pdf format, that reflects following:
+* a high level view of the trends over time for the net amount sent as a total amount, and as a percentage of the original budget:
+  * at the `departement` level
+  * at the `category` level
+  * at the `sub_category` level
+* Provide a view of the departments with the highest proportion of `net amount sent` over the last 3 years
+* Provide a view of the departments with the highest proportion of `net amount received` over the last 3 years
+* Show the top 5 budget categories (and separetely the top 5 budget sub-categories) taking into accunt the trends over the past 3 years, for:
+  1) the most efficient budget allocations, and
+  2) the least efficient budget allocations
+
+Please include a short text/narrative description of your interpretations/analysis of the above the graphs above
+
+Your dashboard should also include an `Executive-level summary` of your analysis and findings, that a non-specialist/technical person would be able to understand without additional guidance.
 
 ## Contact
 You can contact gordon.inggs and/or colinscott.anthony @ capetown.gov.za for any questions on the above.
