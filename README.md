@@ -37,15 +37,14 @@ You can use any tool to produce the output, e.g. Python, R, Excel, Power BI, Tab
 4. Send us an email, with your archived project attached. If it is larger than 10 MB, then share it via a cloud storage service such as DropBox, and include the link in your email. 
 
 ## Challenge
-### 0. Setup
-#### Data
+### Data
 We have made the following dataset available (the filename is a link). It is available in an AWS bucket `cct-ds-code-challenge-input-data`.
 * [`assessment-data-analyst-sample-data.csv`](https://cct-budgets-code-challenge-input-data.s3.amazonaws.com/opm.assessment-data-analyst-sample-data.csv)
 
-### Background to the dataset
+#### Background to the dataset
 A virement is defined as the process of transferring an approved budgetary provision from one operating cost element or capital approval object to another within a vote or tariff service during a municipal financial year
 
-### 1. Descriptive Analytic Tasks (if applying for a Data Analyst Position)
+#### 1. Descriptive Analytic Tasks (if applying for a Data Analyst Position)
 Please use the `assessment-data-analyst-sample-data.csv` dataset to address the following.
 
 The dataset contains the annual budget allocations, and annual virement movements, for various departments and branches of the organisation, broken down by budget `category` and `sub_category` (also referred to as `cost centres` and `cost elements` respectively) over 5 financial years.
@@ -56,7 +55,7 @@ For the sake of this exercise, assume that the movement of funds after the alloc
 
 For this exercise, assume that `efficient`/`inefficient` refers to how well/poorly the original budget forecasted the actual amount needed for that category/sub-category.
 
-#### Please provide a "dashboard", in pdf format, that reflects following:
+##### Please provide a "dashboard", in pdf format, that reflects following:
 * a high level view of the trends over time for the net amount sent as a total amount, and as a percentage of the original budget:
   * at the `departement` level
   * at the `category` level
