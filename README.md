@@ -145,13 +145,12 @@ Using the [`sr_hex.csv.gz`](https://cct-ds-code-challenge-input-data.s3.af-south
 
 The data visualisation / dashboard must include the following:
 
-1.    A chart (plot) or charts (plots) that helps to answer the above question.
-2.    A cartographic map with identifiable landmark features (e.g. major roads, railways, etc.)
-3.    Make (1) and (2) interactive to allow users to explore the data and uncover insights
-4.    Cross plot brushing: a filter on the map must update the chart(s) accordingly with the filter, and vice versa.
-5.    Data Storytelling: in a separate markdown document, titled `data-driven-storytelling.md`, provide a brief, step-by-step, point form description of how your visualisations (and information from the dataset) outline a data-driven story that answers the above question.
-6.    Design Principles: In a separate markdown document, titled `visualisation-design-choices.md`, please provide a brief, point form explanation for why you have chosen certain colours (e.g. for legends), fonts, the layout or anything else that will help us understand your thinking in designing the data visualisation / dashboard to answer the question.
-7.    Publish your work using an online service such as https://pages.github.com/ or any other means you are familiar with.  Anyone with an Internet connection and a modern browser such as Google Chrome, Mozilla Firefox or Microsoft Edge, should be able to see the end product and interact with it. Please reference the published link to your visualisation tool in the `README.md` of your repository.
+1. A chart (plot) or charts (plots) that helps to answer the above question.
+2. A minimalist cartographic map with identifiable landmark features (e.g. major roads, railways, etc.) and some representation of the data.
+3. Make (1) and (2) interactive in some manner, so as to allow users to explore the data and uncover insights.
+4. Data Storytelling: in a separate markdown document, titled `data-driven-storytelling.md`, provide a brief, step-by-step, point form description of how your visualisations (and information from the dataset) outline a data-driven story that answers the above question. 
+5. Design Principles: In a separate markdown document, titled `visualisation-design-choices.md`, please provide a brief, point form explanation for why you have chosen certain colours (e.g. for legends), fonts, the layout or anything else that will help us understand your thinking in designing the data visualisation / dashboard to answer the question. 
+6. Publish your work using an online service such as https://pages.github.com/ or any other means you are familiar with.  Anyone with an Internet connection and a modern browser such as Google Chrome, Mozilla Firefox or Microsoft Edge, should be able to see the end product and interact with it. Please reference the published link to your visualisation tool in the `README.md` of your repository.
 
 Please also note the comments above about the nature of the code that we expect.
 
