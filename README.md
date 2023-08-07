@@ -18,16 +18,16 @@ So, follow common conventions with respect to directory structure and names to m
 
 ## What we're looking for
 ### Expectation of Effort
-We expect you to spend up to 48 calendar hours working on this assessment per position. If you are finding that you spending significantly more time than this, then please contact whomever sent you the link to this assessment to let them know.
+We expect you to spend up to 48 calendar hours working on this assessment per position. If you are finding that you are spending significantly more time than this, then please contact whomever sent you the link to this assessment to let them know.
 
-You should have received over 7 days warning that you would be undertaking this assesment. Please notify [Delyno du Toit](delyno.dutoit@capetown.gov.za) if this was not the case.
+You should have received over 7 days warning that you would be undertaking this assessment. Please notify [Delyno du Toit](delyno.dutoit@capetown.gov.za) if this was not the case.
 
 ### Things to focus on
-Over and and above the tasks specified below, there are particular aspects of each position that we would like you to pay attention to:
+Over and above the tasks specified below, there are particular aspects of each position that we would like you to pay attention to:
 
 * Data Scientist candidates - we're looking for both good, statistical insight into problems, as well as the ability to communicate complex topics. Please make special effort to highlight what you believe to be the crux of a particular problem, as well as how your work addresses it.
 * Data Engineer candidates - as the key enablers of our unit's work, we really want to see work done in a sustainable manner: writing for easy comprehension, testing, clean code, modularity all bring us joy.
-* Data Analyst candidates - we consider success for our analysts when they provide the insights that inform actual decisions. Hence, we want evidence of both the ability to surface these insights from data, as well as the rhetorical skill in conveying the implications thereof. Your audience is intelligent, but non-specialist.
+* Data Analyst candidates - we think our analysts have done a good job when they provide insights that inform actual decisions. Hence, we want evidence of both the ability to surface these insights from data, as well as the skill to convey those insights. Your audience is intelligent, but non-specialist.
 
 ### Candidates where programming is required (Data Scientist; Engineers & Visualisation Engineer)
 Requirements and notes:
@@ -42,7 +42,7 @@ Requirements and notes:
 ### Candidates where programming is not required (Data Analysts)
 *Note* If you prefer, you may submit using the requirements described above.
 
-You can use any tool to produce the output, e.g. Python, R, Excel, Power BI, Tableau, etc. The final deliverable needs to be a pdf report with your analysis.
+You can use any tool to produce the output that enables you to fulfill the task, e.g. Python, R, Excel, Power BI, Tableau, etc. The final deliverable needs to be a pdf report with your analysis.
 
 ## How to submit
 ### Candidates where programming is required (Data Scientist;  Engineers and Visualisation Engineers)
@@ -91,7 +91,7 @@ Use the [AWS S3 SELECT](https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3
 
 Please log the time taken to perform the operations described, and within reason, try to optimise latency and computational resources used. Please also note the comments above about the nature of the code that we expect.
 
-### 2. Initial Data Transformation (if applying for a Data Engineering and/or Science Position and Visualisation Engineer)
+### 2. Initial Data Transformation (if applying for a Data Engineering, Visualisation Engineer and/or Science Position)
 Join the equivalent of the contents of the file `city-hex-polygons-8.geojson` to the service request dataset, such that each service request is assigned to a single H3 resolution level 8 hexagon. Use the `sr_hex.csv.gz` file to validate your work.
 
 For any requests where the `Latitude` and `Longitude` fields are empty, set the index value to `0`.
@@ -102,9 +102,9 @@ Include logging that lets the executor know how many of the records failed to jo
 Please use the `sr_hex_truncated.csv` dataset to address the following.
 
 Please provide the following:
-1. An answer to the question "In which suburbs should the Water and Sanitation directorate concentrate their infrastructure improvement efforts?". Please motivate how you related the data provided to infrastructure issues.
-2. Provide a visual mock of a dashboard for the purpose of monitoring progress in applying the insights developed in (1). It should focus the user on  performance pain points. Add a note for each visual element, explaining how it helps fulfill this overall function. Please also provide a brief explanation as to how the data provided would be used to realise what is contained in your mock.
-3. Identify value-adding insights for the management of Water and Sanitation, from the dataset provided, with regards to water provision within the City.
+1. A compelling narrative product that answers the question "In which suburbs should the Urban Mobility directorate concentrate their infrastructure improvement efforts?". Please motivate how you related the data provided to infrastructure issues.
+2. Provide a visual mock of a dashboard for the purpose of monitoring progress in applying the insights developed in (1). It should focus the user on performance pain points. Add a note for each visual element, explaining how it helps fulfill this overall function. Please also provide a brief explanation as to how the data provided would be used to realise what is contained in your mock.
+3. Identify value-adding insights for the management of Urban Mobility, from the dataset provided, in regard to transport within the City.
  
 An Executive-level, non-specialist person should be able to read this report and follow your analysis without guidance.
 
