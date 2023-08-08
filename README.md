@@ -99,7 +99,7 @@ For any requests where the `Latitude` and `Longitude` fields are empty, set the 
 Include logging that lets the executor know how many of the records failed to join, and include a join error threshold above which the script will error out. Please motivate why you have selected the error threshold that you have. Please also log the time taken to perform the operations described, and within reason, try to optimise latency and computational resources used.
 
 ### 3. Descriptive Analytic Tasks (if applying for a Data Analyst Position)
-*Note:* We are interested in how you reason about
+*Note:* We are interested in how you reason about the problem.
 
 Please use the `sr_hex_truncated.csv` dataset to address the following.
 
