@@ -42,7 +42,7 @@ Requirements and notes:
 ### Candidates where programming is not required (Data Analysts)
 *Note* If you prefer, you may submit using the requirements described above.
 
-You can use any tool to produce the output, e.g. Python, R, Excel, Power BI, Tableau, etc. The final deliverable needs to be a pdf report with your analysis.
+You can use any tool to produce the output, e.g. Python, R, Excel, Power BI, Tableau, etc. The **final deliverable needs to be a pdf report** with your analysis.
 
 ## How to submit
 ### Candidates where programming is required (Data Scientist;  Engineers and Visualisation Engineers)
@@ -99,14 +99,20 @@ For any requests where the `Latitude` and `Longitude` fields are empty, set the 
 Include logging that lets the executor know how many of the records failed to join, and include a join error threshold above which the script will error out. Please motivate why you have selected the error threshold that you have. Please also log the time taken to perform the operations described, and within reason, try to optimise latency and computational resources used.
 
 ### 3. Descriptive Analytic Tasks (if applying for a Data Analyst Position)
+*Note:* We are interested in how you reason about
+
 Please use the `sr_hex_truncated.csv` dataset to address the following.
 
 Please provide the following:
-1. An answer to the question "In which suburbs should the Water and Sanitation directorate concentrate their infrastructure improvement efforts?". Please motivate how you related the data provided to infrastructure issues.
-2. Provide a visual mock of a dashboard for the purpose of monitoring progress in applying the insights developed in (1). It should focus the user on  performance pain points. Add a note for each visual element, explaining how it helps fulfill this overall function. Please also provide a brief explanation as to how the data provided would be used to realise what is contained in your mock.
-3. Identify value-adding insights for the management of Water and Sanitation, from the dataset provided, with regards to water provision within the City.
+1. An answer to the question "In which 3 suburbs should the Water and Sanitation directorate concentrate their infrastructure improvement efforts?". Please motivate how you related the data provided to infrastructure issues.
+2. An answer to the questions:
+    1. Focusing on the Water and Sanitation directorate - "What is the median time & 80th percentile time to complete each service request across the City?" (each row represent a service request).
+    2. Focusing on the Water and Sanitation directorate - "What is the median time & 80th percentile time to complete each service request for the 3 suburbs identified in (1)?" (each row represent a service request).
+    3. "Is there any signifanct differences in the median and 80th percentile completion times between the City and the 3 suburbs identified in(1)?".  Please provide elaborate on the similarities or differences.
+3. Provide a visual mock of a dashboard for the purpose of monitoring progress in applying the insights developed in (1) & (2). It should focus the user on  performance pain points. Add a note for each visual element, explaining how it helps fulfill this overall function. Please also provide a brief explanation as to how the data provided would be used to realise what is contained in your mock.
+4. Identify value-adding insights for the management of Water and Sanitation, from the dataset provided, with regards to water provision within the City.
  
-An Executive-level, non-specialist person should be able to read this report and follow your analysis without guidance.
+The **final deliverable** is a pdf report for the Executive Management team of the City.  An Executive-level, non-specialist person should be able to read the report and follow your analysis without guidance.
 
 ### 4. Predictive Analytic Tasks (if applying for a Data Science Position)
 Using the `sr_hex.csv` dataset, please chose __two__ of the following:
