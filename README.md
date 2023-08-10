@@ -18,21 +18,21 @@ So, follow common conventions with respect to directory structure and names to m
 
 ## What we're looking for
 ### Expectation of Effort
-We expect you to spend up to 48 calendar hours working on this assessment per position. If you are finding that you spending significantly more time than this, then please contact whomever sent you the link to this assessment to let them know.
+We expect you to spend up to 48 calendar hours working on this assessment per position. If you are finding that you are spending significantly more time than this, then please contact whomever sent you the link to this assessment to let them know.
 
-You should have received over 7 days warning that you would be undertaking this assesment. Please notify [Delyno du Toit](delyno.dutoit@capetown.gov.za) if this was not the case.
+You should have received over 7 days warning that you would be undertaking this assessment. Please notify [Delyno du Toit](delyno.dutoit@capetown.gov.za) if this was not the case.
 
 ### Things to focus on
-Over and and above the tasks specified below, there are particular aspects of each position that we would like you to pay attention to:
+Over and above the tasks specified below, there are particular aspects of each position that we would like you to pay attention to:
 
 * Data Scientist candidates - we're looking for both good, statistical insight into problems, as well as the ability to communicate complex topics. Please make special effort to highlight what you believe to be the crux of a particular problem, as well as how your work addresses it.
 * Data Engineer candidates - as the key enablers of our unit's work, we really want to see work done in a sustainable manner: writing for easy comprehension, testing, clean code, modularity all bring us joy.
-* Data Analyst candidates - we consider success for our analysts when they provide the insights that inform actual decisions. Hence, we want evidence of both the ability to surface these insights from data, as well as the rhetorical skill in conveying the implications thereof. Your audience is intelligent, but non-specialist.
+* Data Analyst candidates - we think our analysts have done a good job when they provide insights that inform actual decisions. Hence, we want evidence of both the ability to surface these insights from data, as well as the skill to convey those insights. Your audience is intelligent, but non-specialist.
 
 ### Candidates where programming is required (Data Scientist; Engineers & Visualisation Engineer)
 Requirements and notes:
 * For Data Science and Data Engineering, our primary programming languages are `python`, `R` and `SQL`. We will accept code that is packaged in `.py`, `.ipynb`, `.R` and `.Rmd` files. Scripts in `.sql` may also be included where applicable.
-* Data Visualisation engineers should have knowledge of either `python` or `R`, and relevant front-end programming languages (e.g. Javascript, HTML, CSS). We will accept code that is packaged in `.py`, `.R` and appropriate front-end programming language specific files, e.g. `.js`, `.html` etc.
+* Data Visualisation engineers should have knowledge of either `python` or `R`, and relevant front-end programming languages (e.g. Javascript, HTML, CSS). We will accept code that is packaged in `.py`, `.R` and appropriate front-end programming language specific files, e.g. `.js`, `.html` etc. Furthermore, we greatly appreciate adherence to the principles and guidelines of [Single Page Applications](https://en.wikipedia.org/wiki/Single-page_application).
 * Bash or similar scripting language files are fine for glue. You may develop in any development environment you choose. 
 * We expect to be able to clone your repo, immediately identify what script to execute from your README file, and execute it to completion with no human interaction. 
   In order to ensure that our environment has the right libraries or packages, please follow standard python (PEP8) or R guidelines for structure in your code, i.e place `import` and `library()` commands at the top of your scripts.
@@ -42,7 +42,7 @@ Requirements and notes:
 ### Candidates where programming is not required (Data Analysts)
 *Note* If you prefer, you may submit using the requirements described above.
 
-You can use any tool to produce the output, e.g. Python, R, Excel, Power BI, Tableau, etc. The final deliverable needs to be a pdf report with your analysis.
+You can use any tool to produce the output, e.g. Python, R, Excel, Power BI, Tableau, etc. The **final deliverable needs to be a pdf report** with your analysis.
 
 ## How to submit
 ### Candidates where programming is required (Data Scientist;  Engineers and Visualisation Engineers)
@@ -91,7 +91,7 @@ Use the [AWS S3 SELECT](https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3
 
 Please log the time taken to perform the operations described, and within reason, try to optimise latency and computational resources used. Please also note the comments above about the nature of the code that we expect.
 
-### 2. Initial Data Transformation (if applying for a Data Engineering and/or Science Position and Visualisation Engineer)
+### 2. Initial Data Transformation (if applying for a Data Engineering, Visualisation Engineer and/or Science Position)
 Join the equivalent of the contents of the file `city-hex-polygons-8.geojson` to the service request dataset, such that each service request is assigned to a single H3 resolution level 8 hexagon. Use the `sr_hex.csv.gz` file to validate your work.
 
 For any requests where the `Latitude` and `Longitude` fields are empty, set the index value to `0`.
@@ -99,14 +99,20 @@ For any requests where the `Latitude` and `Longitude` fields are empty, set the 
 Include logging that lets the executor know how many of the records failed to join, and include a join error threshold above which the script will error out. Please motivate why you have selected the error threshold that you have. Please also log the time taken to perform the operations described, and within reason, try to optimise latency and computational resources used.
 
 ### 3. Descriptive Analytic Tasks (if applying for a Data Analyst Position)
+*Note:* We are most interested in how you reason about the problem.
+
 Please use the `sr_hex_truncated.csv` dataset to address the following.
 
 Please provide the following:
-1. An answer to the question "In which suburbs should the Water and Sanitation directorate concentrate their infrastructure improvement efforts?". Please motivate how you related the data provided to infrastructure issues.
-2. Provide a visual mock of a dashboard for the purpose of monitoring progress in applying the insights developed in (1). It should focus the user on  performance pain points. Add a note for each visual element, explaining how it helps fulfill this overall function. Please also provide a brief explanation as to how the data provided would be used to realise what is contained in your mock.
-3. Identify value-adding insights for the management of Water and Sanitation, from the dataset provided, with regards to water provision within the City.
+1. An answer to the question "In which 3 suburbs should the Urban Mobility directorate concentrate their infrastructure improvement efforts?". Please motivate how you related the data provided to infrastructure issues.
+2. An answer to the questions:
+    1. Focusing on the Urban Mobility directorate - "What is the median & 80th percentile time to complete each service request across the City?" (each row represent a service request).
+    2. Focusing on the Urban Mobility directorate - "What is the median & 80th percentile time to complete each service request for the 3 suburbs identified in (1)?" (each row represent a service request).
+    3. "Is there any significant differences in the median and 80th percentile completion times between the City as a whole and the 3 suburbs identified in(1)?".  Please elaborate on the similarities or differences.
+3. Provide a visual mock of a dashboard for the purpose of monitoring progress in applying the insights developed in (1) & (2). It should focus the user on performance pain points. Add a note for each visual element, explaining how it helps fulfill this overall function. Please also provide a brief explanation as to how the data provided would be used to realise what is contained in your mock.
+4. Identify value-adding insights for the management of Urban Mobility, from the dataset provided, in regard to commuter transport within the City.
  
-An Executive-level, non-specialist person should be able to read this report and follow your analysis without guidance.
+The **final deliverable** is a report (in PDF form) for the Executive Management team of the City.  An Executive-level, non-specialist person should be able to read the report and follow your analysis without guidance.
 
 ### 4. Predictive Analytic Tasks (if applying for a Data Science Position)
 Using the `sr_hex.csv` dataset, please chose __two__ of the following:
@@ -139,21 +145,20 @@ Please also remove any columns which you believe could lead to the resident who 
 
 ### 6. Data Visualisation Task (if applying for a Data Visualisation Engineering Position)
 
-Using the [`sr_hex.csv.gz`](https://cct-ds-code-challenge-input-data.s3.af-south-1.amazonaws.com/sr_hex.csv.gz) dataset and open source web technologies, develop a data visualisation / dashboard that help to answer the question:
+Using the [`sr_hex.csv.gz`](https://cct-ds-code-challenge-input-data.s3.af-south-1.amazonaws.com/sr_hex.csv.gz) dataset and open source front-end web technologies (html, css, javascript, etc), develop a data visualisation / dashboard that help to answer the question:
 
 *"In which suburbs should the Water and Sanitation directorate concentrate their infrastructure improvement efforts?".*
 
 The data visualisation / dashboard must include the following:
 
-1.    A chart (plot) or charts (plots) that helps to answer the above question.
-2.    A cartographic map with identifiable landmark features (e.g. major roads, railways, etc.)
-3.    Make (1) and (2) interactive to allow users to explore the data and uncover insights
-4.    Cross plot brushing: a filter on the map must update the chart(s) accordingly with the filter, and vice versa.
-5.    Data Storytelling: in a separate markdown document, titled `data-driven-storytelling.md`, provide a brief, step-by-step, point form description of how your visualisations (and information from the dataset) outline a data-driven story that answers the above question.
-6.    Design Principles: In a separate markdown document, titled `visualisation-design-choices.md`, please provide a brief, point form explanation for why you have chosen certain colours (e.g. for legends), fonts, the layout or anything else that will help us understand your thinking in designing the data visualisation / dashboard to answer the question.
-7.    Publish your work using an online service such as https://pages.github.com/ or any other means you are familiar with.  Anyone with an Internet connection and a modern browser such as Google Chrome, Mozilla Firefox or Microsoft Edge, should be able to see the end product and interact with it. Please reference the published link to your visualisation tool in the `README.md` of your repository.
+1. A chart (plot) or charts (plots) that helps to answer the above question.
+2. A minimalist cartographic map with identifiable landmark features (e.g. major roads, railways, etc.) and some representation of the data.
+3. Make (1) and (2) interactive in some manner, so as to allow users to explore the data and uncover insights. The following example [Map with "range" sliders](https://observablehq.com/d/a040753103477386) demostrates an interactive map. However, you're not limited to this example – feel free to explore other interactive approaches.
+4. Data Storytelling: in a separate markdown document, titled `data-driven-storytelling.md`, provide a brief, step-by-step, point form description of how your visualisations (and information from the dataset) outline a data-driven story that answers the above question. 
+5. Design Principles: In a separate markdown document, titled `visualisation-design-choices.md`, please provide a brief, point form explanation for why you have chosen certain colours (e.g. for legends), fonts, the layout or anything else that will help us understand your thinking in designing the data visualisation / dashboard to answer the question. 
+6. Publish your work using an online service such as https://pages.github.com/ or any other means you are familiar with.  Anyone with an Internet connection and a modern browser such as Google Chrome, Mozilla Firefox or Microsoft Edge, should be able to see the end product and interact with it. Please reference the published link to your visualisation tool in the `README.md` of your repository.
 
 Please also note the comments above about the nature of the code that we expect.
 
 ## Contact
-You can contact gordon.inggs and/or colinscott.anthony @ capetown.gov.za for any questions on the above.
+You can contact gordon.inggs, muhammed.ockards and/or colinscott.anthony @ capetown.gov.za for any questions on the above.
