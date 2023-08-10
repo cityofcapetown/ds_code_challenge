@@ -145,7 +145,7 @@ Please also remove any columns which you believe could lead to the resident who 
 
 ### 6. Data Visualisation Task (if applying for a Data Visualisation Engineering Position)
 
-Using the [`sr_hex.csv.gz`](https://cct-ds-code-challenge-input-data.s3.af-south-1.amazonaws.com/sr_hex.csv.gz) dataset and open source web technologies, develop a data visualisation / dashboard that help to answer the question:
+Using the [`sr_hex.csv.gz`](https://cct-ds-code-challenge-input-data.s3.af-south-1.amazonaws.com/sr_hex.csv.gz) dataset and open source front-end web technologies (html, css, javascript, etc), develop a data visualisation / dashboard that help to answer the question:
 
 *"In which suburbs should the Water and Sanitation directorate concentrate their infrastructure improvement efforts?".*
 
