@@ -29,10 +29,10 @@ Over and above the tasks specified below, there are particular aspects of each p
 * Data Engineer candidates - as the key enablers of our unit's work, we really want to see work done in a sustainable manner: writing for easy comprehension, testing, clean code, modularity all bring us joy.
 * Data Analyst candidates - we think our analysts have done a good job when they provide insights that inform actual decisions. Hence, we want evidence of both the ability to surface these insights from data, as well as the skill to convey those insights. Your audience is intelligent, but non-specialist.
 
-### Candidates where programming is required (Data Scientist; Engineers & Visualisation Engineer)
+### Candidates where programming is required (Data Scientist; Engineers, Visualisation Engineer and Front End Developers)
 Requirements and notes:
 * For Data Science and Data Engineering, our primary programming languages are `python`, `R` and `SQL`. We will accept code that is packaged in `.py`, `.ipynb`, `.R` and `.Rmd` files. Scripts in `.sql` may also be included where applicable.
-* Data Visualisation engineers should have knowledge of either `python` or `R`, and relevant front-end programming languages (e.g. Javascript, HTML, CSS). We will accept code that is packaged in `.py`, `.R` and appropriate front-end programming language specific files, e.g. `.js`, `.html` etc. Furthermore, we greatly appreciate adherence to the principles and guidelines of [Single Page Applications](https://en.wikipedia.org/wiki/Single-page_application).
+* Data Visualisation engineers and Front End Developers should have knowledge of either `python` or `R`, and relevant front-end programming languages (e.g. Javascript, HTML, CSS). We will accept code that is packaged in `.py`, `.R` and appropriate front-end programming language specific files, e.g. `.js`, `.html` etc. Furthermore, we greatly appreciate adherence to the principles and guidelines of [Single Page Applications](https://en.wikipedia.org/wiki/Single-page_application).
 * Bash or similar scripting language files are fine for glue. You may develop in any development environment you choose. 
 * We expect to be able to clone your repo, immediately identify what script to execute from your README file, and execute it to completion with no human interaction. 
   In order to ensure that our environment has the right libraries or packages, please follow standard python (PEP8) or R guidelines for structure in your code, i.e place `import` and `library()` commands at the top of your scripts.
