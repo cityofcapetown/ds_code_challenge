@@ -5,7 +5,7 @@
 
 ## Purpose
 
-The purpose of this challenge is to evaluate the skills of prospective Data Scientists, Engineers and Analysts for positions in the City of Cape Town's Data Science unit. 
+The purpose of this challenge is to evaluate the skills of prospective Data Scientists, Engineers, Analysts and Front End Developer for positions in the City of Cape Town's Data Science unit. 
 
 ## Intended audience
 
@@ -45,7 +45,7 @@ Requirements and notes:
 You can use any tool to produce the output, e.g. Python, R, Excel, Power BI, Tableau, etc. The **final deliverable needs to be a pdf report** with your analysis.
 
 ## How to submit
-### Candidates where programming is required (Data Scientist;  Engineers and Visualisation Engineers)
+### Candidates where programming is required (Data Scientist;  Engineers, Visualisation Engineers and Front End Developers)
 1. Clone this repository and load it into your development environment. 
 2. Work the challenge, committing regularly to document your progress. Try have structured, meaningful commits, where each one adds significant functionality in a coherent manner.
 3. Host your repository somewhere that is publicly accessible. If you're using GitHub, please use a fork of our original repository.
@@ -91,7 +91,7 @@ Use the [AWS S3 SELECT](https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3
 
 Please log the time taken to perform the operations described, and within reason, try to optimise latency and computational resources used. Please also note the comments above about the nature of the code that we expect.
 
-### 2. Initial Data Transformation (if applying for a Data Engineering, Visualisation Engineer and/or Science Position)
+### 2. Initial Data Transformation (if applying for a Data Engineering, Visualisation Engineer, Front End Developer and/or Science Position)
 Join the equivalent of the contents of the file `city-hex-polygons-8.geojson` to the service request dataset, such that each service request is assigned to a single H3 resolution level 8 hexagon. Use the `sr_hex.csv.gz` file to validate your work.
 
 For any requests where the `Latitude` and `Longitude` fields are empty, set the index value to `0`.
@@ -143,7 +143,7 @@ Please log the time taken to perform the operations described, and within reason
    * temporal accuracy to within 6 hours
 Please also remove any columns which you believe could lead to the resident who made the request being identified. We expect in the accompanying report that you will justify as to why this data is now anonymised. Please limit this commentary to less than 500 words. If your code is written in a code notebook such as Jupyter notebook or Rmarkdown, you can include this commentary in your notebook.
 
-### 6. Data Visualisation Task (if applying for a Data Visualisation Engineering Position)
+### 6. Data Visualisation Task (if applying for a Data Visualisation Engineering or Front End Developer Position)
 
 Using the [`sr_hex.csv.gz`](https://cct-ds-code-challenge-input-data.s3.af-south-1.amazonaws.com/sr_hex.csv.gz) dataset and open source front-end web technologies (html, css, javascript, etc), develop a data visualisation / dashboard that help to answer the question:
 
