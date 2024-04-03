@@ -46,11 +46,13 @@ Budget is allocated to different levels of the organisational hierarchy: Directo
 
 Operational needs can change over time, hence managers need a way to adjust their budget structure in line with these changing needs.
 
-A virement is a mechanism to provide this flexibility and is defined as the process of transferring a budget allocated to one item category (called a `cost element`) to another, or to another department within a municipal financial year (July to June). 
+A virement is a mechanism to provide this flexibility and is defined as the process of transferring a budget allocated to one item category (called a `cost element`) to another, or to another organisational unit (`cost centre`) within a directorate in a given municipal financial year (July to June). 
 
-This allows managers to ensure they do not overspend in a particular budget category and keep the planned expenditure in line with the actual needs. However, it can also signal that the initial budget allocation was not efficient.
+This allows managers to ensure they do not overspend in a particular budget category and keep the planned expenditure in line with the actual needs. 
 
-The dataset provided contains the annual budget allocations, and annual virement "movements", for various directorates, departments and branches of the organisation, broken down by budget `cost_centre` (a proxy for the Directorate/Department etc.) and `cost_element` (the item category), over 5 financial years.
+However, it can also signal that the initial budget allocation was not efficient.
+
+The dataset provided contains the annual budget allocations, and annual virements "movements", for different levels of the organisatinoal hierarchy (directorates, departments and branches), further broken down by the organisational unit  within the hierachy (`cost_centre`) and the budget item category (`cost_element`), over 5 financial years.
 
 **this dataset was generated for the purpose of this exercise and does not reflect the actual budget allocations within the City of Cape Town**
 
@@ -60,25 +62,28 @@ Please use the above [dataset](https://cct-budgets-code-challenge-input-data.s3.
 For the sake of this exercise, assume that the each virement/movement of funds represents an inefficient budget allocation, and that `efficient`/`inefficient` refers to how well/poorly the original budget forecasted the actual amount needed for that `cost centre`/`cost-element` (this is an over-simplification, but will suffice for the exercise).
 
 #### Outputs
-**Please provide a "dashboard", in pdf format, that reflects following:**
-1) Provide a high level view of the trends over time for the net amount moved, as a total amount, and as a percentage of the original budget:
+The main output is a "dashboard", in pdf format
+* In addition to the pdf dashboard, please also include any code, and/or spreadsheets, and any intermediate analysis, used to generate the dashboard, in your submission.
+* Your analysis should be accompanied by a short text/narrative explanation of your reasoning/findings
+* A non-specialist/technical person should be able to understand this without additional guidance.
+
+**Your dashboard must include the following** 
+1) A high level view of the trends over time for the net amount moved, as a total amount, and as a percentage of the original budget:
   * at the `directorate` level
   * at the `cost centre` level
   * at the `cost element` level
 * Provide a short text/narrative description to explain your analysis, how you identified the items and what these values may mean
   
-2) Provide a view of the top 5 departments with the highest proportion of `net amount moved` over the last 3 years
+2) A view of the top 5 departments with the highest proportion of `net amount moved` over the last 3 years
 
 3) Show the top 5 budget item categories (cost elements) in the most recent financial year, for:
   1) the most efficient budget allocations, and
   2) the least efficient budget allocations
 * Provide a short text/narrative description to explain your analysis, how you identified the items and what these values may mean
 
-4) Provide a summmary figure or table with a narrative to highlight 2 budget changes that your analysis suggest would improve the budget allocation efficiency
+4) A summmary figure or table with a narrative to highlight 2 budget changes that your analysis suggest would improve the budget allocation efficiency
 
-A non-specialist/technical person should be able to understand this summary without additional guidance.
-
-In addition to the PDF dashboard, please also include any code, and/or spreadsheets, and any intermediate analysis, used to generate the dashboard, in your submission.
+5) A one pararaph executive summary of your findings
 
 ## Contact
 You can contact gordon.inggs @ capetown.gov.za for questions relating to access to the data and colinscott.anthony @ capetown.gov.za for any questions relating to the analysis tasks.
