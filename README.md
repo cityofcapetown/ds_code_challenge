@@ -33,9 +33,9 @@ You can use any tool to produce the final output, e.g. Python, R, Excel, Power B
 ## How to submit
 1. Download this repository using the Code -> `Download ZIP` option in the top right-hand corner.
 2. Download the data from the link below
-3. Carry out your analysis and add your work into this folder.
+3. Carry out your analysis and add your work into the downloaded folder.
 6. Create a ZIP file of this folder, with all of your work in it.
-7. Send us an email, attaching your the above ZIP file. If it is larger than 10 MB, then share it via a cloud storage service such as DropBox, and include the link in your email. 
+7. Send us an email, attaching the above ZIP file with your work in it. If it is larger than 10 MB, then share it via a cloud storage service such as DropBox, and include the link in your email. 
 
 ## Challenge
 ### Data
