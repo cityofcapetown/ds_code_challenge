@@ -1,11 +1,11 @@
 
 <img src="img/city_emblem.png" alt="City Logo"/>
 
-# City of Cape Town - Data Science Unit Code Challenge
+# City of Cape Town - Urban Mobility Technical Challenge
 
 ## Purpose
 
-The purpose of this challenge is to evaluate the skills of prospective Data Scientists, Engineers, Analysts and Front End Developer for positions in the City of Cape Town's Data Science unit. 
+The purpose of this challenge is to evaluate the skills of prospective Data positions in the City of Cape Town's Urban Mobility directorate. 
 
 ## Intended audience
 
@@ -23,52 +23,22 @@ We expect you to spend up to 48 calendar hours working on this assessment per po
 You should have received over 7 days warning that you would be undertaking this assessment. Please notify [Delyno du Toit](delyno.dutoit@capetown.gov.za) if this was not the case.
 
 ### Things to focus on
-Over and above the tasks specified below, there are particular aspects of each position that we would like you to pay attention to:
+Over and above the tasks specified below, there are particular aspects that we would like you to pay attention to:
 
-* Data Scientist candidates - we're looking for both good, statistical insight into problems, as well as the ability to communicate complex topics. Please make special effort to highlight what you believe to be the crux of a particular problem, as well as how your work addresses it.
-* Data Engineer candidates - as the key enablers of our unit's work, we really want to see work done in a sustainable manner: writing for easy comprehension, testing, clean code, modularity all bring us joy.
-* Data Analyst candidates - we think our analysts have done a good job when they provide insights that inform actual decisions. Hence, we want evidence of both the ability to surface these insights from data, as well as the skill to convey those insights. Your audience is intelligent, but non-specialist.
-
-### Candidates where programming is required (Data Scientist; Engineers, Visualisation Engineer and Front End Developers)
-Requirements and notes:
-* For Data Science and Data Engineering, our primary programming languages are `python`, `R` and `SQL`. We will accept code that is packaged in `.py`, `.ipynb`, `.R` and `.Rmd` files. Scripts in `.sql` may also be included where applicable.
-* Data Visualisation engineers and Front End Developers should have knowledge of either `python` or `R`, and relevant front-end programming languages (e.g. Javascript, HTML, CSS). We will accept code that is packaged in `.py`, `.R` and appropriate front-end programming language specific files, e.g. `.js`, `.html` etc. Furthermore, we greatly appreciate adherence to the principles and guidelines of [Single Page Applications](https://en.wikipedia.org/wiki/Single-page_application).
-* Bash or similar scripting language files are fine for glue. You may develop in any development environment you choose. 
-* We expect to be able to clone your repo, immediately identify what script to execute from your README file, and execute it to completion with no human interaction. 
-  In order to ensure that our environment has the right libraries or packages, please follow standard python (PEP8) or R guidelines for structure in your code, i.e place `import` and `library()` commands at the top of your scripts.
-* If your repo does not clone and run, we will not attempt to fix it.
-* If your analysis makes use of any external data, the data must either be included in the repo, or be downloaded automatically during script execution.
-
-### Candidates where programming is not required (Data Analysts)
-*Note* If you prefer, you may submit using the requirements described above.
-
-You can use any tool to produce the output, e.g. Python, R, Excel, Power BI, Tableau, etc. The **final deliverable needs to be a pdf report** with your analysis.
+Data & Management Information candidates - we weight success by the degree to which the insights and analysis provided can inform actual decisions. Hence, we want evidence of both the ability to surface these insights from data (trends and outliers), as well as the rhetorical skill in conveying the implications thereof (a clear narrative justified by your analysis and statistical measures). Your audience is intelligent, but not a "technical-specialist".
 
 ## How to submit
-### Candidates where programming is required (Data Scientist;  Engineers, Visualisation Engineers and Front End Developers)
-1. Clone this repository and load it into your development environment. 
-2. Work the challenge, committing regularly to document your progress. Try have structured, meaningful commits, where each one adds significant functionality in a coherent manner.
-3. Host your repository somewhere that is publicly accessible. If you're using GitHub, please use a fork of our original repository.
-4. Inform us via email that your challenge is complete, including a link to your repo. Be sure to make sure it is set to public.
-
-**Be sure to 'watch' this repo for changes - we may push bugfixes**
-
-NOTE: If you would like to _improve_ the content of this repository, by fixing typos or perhaps enhancing the challenge, please do so by submitting a pull request.
-
-### Candidates where programming is not required (Data Analysts)
-*NB* If you prefer, you may submit using the workflow described above.
+*You can use any tool to produce the output, e.g. Python, R, Excel, Power BI, Tableau, etc.* 
+*The **final deliverable needs to be a pdf report** with your analysis.*
 
 1. Download this repository using the Code -> `Download ZIP` option in the top right-hand corner.
-2. Add your work into this folder.
-3. Create a compressed archive file with all of your work in it.
-4. Send us an email, with your archived project attached. If it is larger than 10 MB, then share it via a cloud storage service such as DropBox, and include the link in your email. 
+2. Download the data from the link below
+3. Carry out your analysis and add your work into the downloaded folder.
+6. Create a ZIP file of this folder, with all of your work in it.
+7. Send us an email, attaching the above ZIP file with your work in it. If it is larger than 10 MB, then share it via a cloud storage service such as DropBox, Google Drive, and include the link in your email. 
 
 ## Challenge
-Follow the below steps, completing those indicated as relevant to the positions for which you are interviewing. If there are any steps that you can not complete after a reasonable amount of effort, rather move on to later steps, attempting everything relevant at least once.
-
-For all roles, we expect the challenge response to include what you consider to be role-appropriate testing and validation. For example, a Data Scientist might want to include MAPE scores or confusion matrices. A Data Engineer may want to include logging and data quality validation tests, as well as unit and even integration tests. A Data Analyst might want to plot histograms of the data in question to ensure that outliers aren't overwhelming your analysis.
-
-Your code should be well formatted according to generally accepted style guides and include whatever is necessary for a team-mate unfamiliar with it to maintain it.
+Follow the below steps.  If there are any steps that you can not complete after a reasonable amount of effort, rather move on to later steps, attempting everything relevant at least once.
 
 ### 0. Setup
 #### Data
