@@ -60,14 +60,17 @@ We have made AWS credentials available in the following file, with the appropria
 
 Please use the `sr_hex_truncated.csv` dataset to address the following.
 
-Please provide the following:
+Please provide the following - **Focus on the Urban Mobility directorate**:
 1. An answer to the question "In which 3 suburbs should the Urban Mobility directorate concentrate their infrastructure improvement efforts?". Please motivate how you related the data provided to infrastructure issues.
 2. An answer to the questions:
-    1. Focusing on the Urban Mobility directorate - "What is the median & 80th percentile time to complete each service request across the City?" (each row represent a service request).
+    1. "What is the median & 80th percentile time to complete each service request across the City?" (each row represent a service request).
     2. Focusing on the Urban Mobility directorate - "What is the median & 80th percentile time to complete each service request for the 3 suburbs identified in (1)?" (each row represent a service request).
     3. "Is there any significant differences in the median and 80th percentile completion times between the City as a whole and the 3 suburbs identified in(1)?".  Please elaborate on the similarities or differences.
 3. Provide a visual mock of a dashboard for the purpose of monitoring progress in applying the insights developed in (1) & (2). It should focus the user on performance pain points. Add a note for each visual element, explaining how it helps fulfill this overall function. Please also provide a brief explanation as to how the data provided would be used to realise what is contained in your mock.
-4. Identify value-adding insights for the management of Urban Mobility, from the dataset provided, in regard to waste collection within the City.
+4. Identify duplicate service requests and
+   1. Present a view of these duplicates per service request type.
+   2. Comment on the methodology you followed to identify these duplicates
+5. Identify value-adding insights for the management of Urban Mobility, from the dataset provided, in regard to waste collection within the City.
  
 The **final deliverable** is a report (in PDF form) for the Executive Management team of the City.  An Executive-level, non-specialist should be able to read the report and follow your analysis without guidance.
 
