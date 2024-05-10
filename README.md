@@ -61,7 +61,8 @@ We have made AWS credentials available in the following file, with the appropria
 Please use the `sr_hex_truncated.csv` dataset to address the following.
 
 Please provide the following - **Focus on the Urban Mobility directorate**:
-1. An answer to the question "In which 3 suburbs should the Urban Mobility directorate concentrate their infrastructure improvement efforts?".
+1. Comment on the quality of the dataset and highlight any issues.
+2. An answer to the question "In which 3 suburbs should the Urban Mobility directorate concentrate their infrastructure improvement efforts?".
 
    Please motivate how you related the data provided to infrastructure issues.
 3. An answer to the questions:
