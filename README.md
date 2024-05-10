@@ -18,7 +18,7 @@ So, follow common conventions with respect to directory structure and names to m
 
 ## What we're looking for
 ### Expectation of Effort
-We expect you to spend up to 48 calendar hours working on this assessment per position. If you are finding that you are spending significantly more time than this, then please contact whomever sent you the link to this assessment to let them know.
+We expect you to spend up to 48 calendar hours working on this assessment. If you are finding that you are spending significantly more time than this, then please contact whomever sent you the link to this assessment to let them know.
 
 You should have received over 7 days warning that you would be undertaking this assessment. Please notify [Delyno du Toit](delyno.dutoit@capetown.gov.za) if this was not the case.
 
