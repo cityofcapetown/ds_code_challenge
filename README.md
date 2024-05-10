@@ -74,7 +74,7 @@ Please provide the following - **Focus on the Urban Mobility directorate**:
    1. Present a view of these duplicates per service request type.
    2. Comment on the methodology you followed to identify these duplicates
 6. Identify value-adding insights for the management of Urban Mobility, from the dataset provided, in regard to waste collection within the City.
-7. Recommend a schema that is optimised for analytic work loads. Provide a visual representation of your recommendation and explain it.
+7. Thinking about how the data you worked with above, is extracted from the source system, transformed, loaded and used, recommend a schema that is optimised for analytic work loads. Provide a visual representation of your recommendation and explain it.
  
 The **final deliverable** is a report (in PDF form) for the Executive Management team of the City.  An Executive-level, non-specialist should be able to read the report and follow your analysis without guidance.
 
