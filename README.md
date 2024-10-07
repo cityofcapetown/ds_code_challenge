@@ -50,6 +50,8 @@ We have made the following datasets available (each filename is a link). These a
 
 In some of the tasks below you will be creating datasets that are similar to these, feel free to use the provided files to validate your work.
 
+Each row in the dataset is meant to represent a specific service request
+
 #### Dummy AWS Credentials
 We have made AWS credentials available in the following file, with the appropriate permissions set, [here](https://cct-ds-code-challenge-input-data.s3.af-south-1.amazonaws.com/ds_code_challenge_creds.json).
 
@@ -71,10 +73,8 @@ For **all** questions outlined below, use the **Urban Mobility directorate** dat
 3. An answer to the questions:
     
     3.1. What is the median & 80th percentile time to complete each service request type across all suburbs for Urban Mobility?
-
-       * (each row in the dataset represent a service request).
     
-    3.2. What is the median & 80th percentile time to complete each service request for the 3 suburbs identified in (2) for Urban Mobility? (each row represent a service request).
+    3.2. What is the median & 80th percentile time to complete each service request for the 3 suburbs identified in (2) for Urban Mobility?
     
     3.3. Are there any significant differences in the median and 80th percentile completion times between the City as a whole (3.1) and the 3 suburbs identified in (3.2)?
 
