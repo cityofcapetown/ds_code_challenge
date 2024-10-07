@@ -69,21 +69,29 @@ For **all** questions outlined below, use the **Urban Mobility directorate** dat
    * Outline the logic you used to rank these suburbs
    * Outline the logic you have used to identify issues relating specifically to `infrastructure`.
 3. An answer to the questions:
-    1. What is the median & 80th percentile time to complete each service request type across all suburbs for Urban Mobility?
+    
+    3.1. What is the median & 80th percentile time to complete each service request type across all suburbs for Urban Mobility?
+
        * (each row in the dataset represent a service request).
-    2. What is the median & 80th percentile time to complete each service request for the 3 suburbs identified in (2) for Urban Mobility? (each row represent a service request).
-    3. Are there any significant differences in the median and 80th percentile completion times between the City as a whole (3.1) and the 3 suburbs identified in (3.2)?
+    
+    3.2. What is the median & 80th percentile time to complete each service request for the 3 suburbs identified in (2) for Urban Mobility? (each row represent a service request).
+    
+    3.3. Are there any significant differences in the median and 80th percentile completion times between the City as a whole (3.1) and the 3 suburbs identified in (3.2)?
+
        * Indicate the criteria used to defined differences as `significant`.
        * Please provide plausable reasoning to explain the similarities or differences identified.
-4. Provide a visual `mockup` of a dashboard for the purpose of monitoring progress/improvements from applying the insights identified in (1), (2) and (3).
+5. Provide a visual `mockup` of a dashboard for the purpose of monitoring progress/improvements from applying the insights identified in (1), (2) and (3).
    * This should focus the user on performance pain points.
    * Each visual element should include a text description, explaining how it helps fulfill this overall function.
    * Provide a set of bullet points to explain how the dashboard would be used (analytical flow across the visual elements) to guide decision making.
-5. Identify any duplicate service requests
-   1. Present a view of these duplicates per service request type.
-   2. Detail the logic/methodology used to identify duplicates
-6. Identify value-adding insights for management within Urban Mobility, with regard to potholes.
-7. Consider the structure of the raw service request data you worked with above. Provide a recommendation for how you would process, transform, or structure this dataset into an `analytics-ready` dataset, assuming that the source dataset is extremely large, and that analytical introspection of the data would need to be performant.
+6. Identify any duplicate service requests
+
+   5.1. Present a view of these duplicates per service request type.
+
+   5.2. Detail the logic/methodology used to identify duplicates
+   
+7. Identify value-adding insights for management within Urban Mobility, with regard to potholes.
+8. Consider the structure of the raw service request data you worked with above. Provide a recommendation for how you would process, transform, or structure this dataset into an `analytics-ready` dataset, assuming that the source dataset is extremely large, and that analytical introspection of the data would need to be performant.
    * Provide a visual representation of your recommendation with explanatory text.
 
 ## Contact
