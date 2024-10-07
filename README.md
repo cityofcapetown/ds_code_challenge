@@ -60,23 +60,31 @@ We have made AWS credentials available in the following file, with the appropria
 
 Please use the `sr_hex_truncated.csv` dataset to address the following.
 
-Please provide the following - **Focus on the Urban Mobility directorate**:
-1. Comment on the quality of the dataset and highlight any issues.
-2. An answer to the question "In which 3 suburbs should the Urban Mobility directorate concentrate their infrastructure improvement efforts?".
+For **all** questions outlined below, use the **Urban Mobility directorate** data
 
-   Please motivate how you related the data provided to infrastructure issues.
+**NB**: The **final deliverable** is a report (in PDF form) for the Executive Management team of the City.  An Executive-level, non-specialist should be able to read the report and follow your analysis without guidance.
+
+1. Comment on the quality of the dataset and highlight any data quality issues.
+2. In which 3 suburbs should the Urban Mobility directorate concentrate their infrastructure improvement efforts?
+   * Outline the logic you used to rank these suburbs
+   * Outline the logic you have used to identify issues relating specifically to `infrastructure`.
 3. An answer to the questions:
-    1. "What is the median & 80th percentile time to complete each service request across the City?" (each row represent a service request).
-    2. Focusing on the Urban Mobility directorate - "What is the median & 80th percentile time to complete each service request for the 3 suburbs identified in (1)?" (each row represent a service request).
-    3. "Is there any significant differences in the median and 80th percentile completion times between the City as a whole and the 3 suburbs identified in(1)?".  Please elaborate on the similarities or differences.
-4. Provide a visual mockup of a dashboard for the purpose of monitoring progress in applying the insights developed in (1) & (2). It should focus the user on performance pain points. Add a note for each visual element, explaining how it helps fulfill this overall function. Please also provide a brief explanation as to how the data provided would be used to realise what is contained in your mock.
-5. Identify duplicate service requests and
+    1. What is the median & 80th percentile time to complete each service request type across all suburbs for Urban Mobility?
+       * (each row in the dataset represent a service request).
+    2. What is the median & 80th percentile time to complete each service request for the 3 suburbs identified in (2) for Urban Mobility? (each row represent a service request).
+    3. Are there any significant differences in the median and 80th percentile completion times between the City as a whole (3.1) and the 3 suburbs identified in (3.2)?
+       * Indicate the criteria used to defined differences as `significant`.
+       * Please provide plausable reasoning to explain the similarities or differences identified.
+4. Provide a visual `mockup` of a dashboard for the purpose of monitoring progress/improvements from applying the insights identified in (1), (2) and (3).
+   * This should focus the user on performance pain points.
+   * Each visual element should include a text description, explaining how it helps fulfill this overall function.
+   * Provide a set of bullet points to explain how the dashboard would be used (analytical flow across the visual elements) to guide decision making.
+5. Identify any duplicate service requests
    1. Present a view of these duplicates per service request type.
-   2. Comment on the methodology you followed to identify these duplicates
-6. Identify value-adding insights for the management of Urban Mobility, from the dataset provided, in regard to waste collection within the City.
-7. Thinking about how the data you worked with above, is extracted from the source system, transformed, loaded and used, recommend a schema that is optimised for analytic work loads. Provide a visual representation of your recommendation and explain it.
- 
-The **final deliverable** is a report (in PDF form) for the Executive Management team of the City.  An Executive-level, non-specialist should be able to read the report and follow your analysis without guidance.
+   2. Detail the logic/methodology used to identify duplicates
+6. Identify value-adding insights for management within Urban Mobility, with regard to potholes.
+7. Consider the structure of the raw service request data you worked with above. Provide a recommendation for how you would process, transform, or structure this dataset into an `analytics-ready` dataset, assuming that the source dataset is extremely large, and that analytical introspection of the data would need to be performant.
+   * Provide a visual representation of your recommendation with explanatory text.
 
 ## Contact
 You can contact gordon.inggs, muhammed.ockards and/or colinscott.anthony @ capetown.gov.za for any questions on the above.
