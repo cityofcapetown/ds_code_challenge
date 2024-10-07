@@ -91,7 +91,8 @@ For **all** questions outlined below, use the **Urban Mobility directorate** dat
    5.2. Detail the logic/methodology used to identify duplicates
    
 7. Identify value-adding insights for management within Urban Mobility, with regard to potholes.
-8. Consider the structure of the raw service request data you worked with above. Provide a recommendation for how you would process, transform, or structure this dataset into an `analytics-ready` dataset, assuming that the source dataset is extremely large, and that analytical introspection of the data would need to be performant.
+8. Consider the structure of the raw service request data you worked with above. Provide a recommendation for how you would process, transform, or structure this dataset into an `analytics-ready` dataset.
+   * as an additional feature, assuming that the source dataset is extremely large, and that analytical introspection of the data would need to be performant.
    * Provide a visual representation of your recommendation with explanatory text.
 
 ## Contact
