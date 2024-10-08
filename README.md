@@ -74,12 +74,13 @@ For **all** questions outlined below, use the **Urban Mobility directorate** dat
     
     3.1. What is the median & 80th percentile time to complete each service request type across all suburbs for Urban Mobility?
     
-    3.2. What is the median & 80th percentile time to complete each service request for the 3 suburbs identified in (2) for Urban Mobility?
+    3.2. What is the median & 80th percentile time to complete each service request for each of the 3 suburbs identified in (2) for Urban Mobility?
     
     3.3. Are there any significant differences in the median and 80th percentile completion times between the City as a whole (3.1) and the 3 suburbs identified in (3.2)?
 
        * Indicate the criteria used to defined differences as `significant`.
        * Please provide plausable reasoning to explain the similarities or differences identified.
+  
 5. Provide a visual `mockup` of a dashboard for the purpose of monitoring progress/improvements from applying the insights identified in (1), (2) and (3).
    * This should focus the user on performance pain points.
    * Each visual element should include a text description, explaining how it helps fulfill this overall function.
