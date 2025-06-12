@@ -141,9 +141,12 @@ Feel free to use any other data you can find in the public domain, except for ta
 
 **The final output of the execution of your code should be a self-contained `html` file or executed `ipynb` file that is your report.** 
  
-A statistically minded layperson should be able to read this report and follow your analysis without guidance.
+A statistically minded layperson should be able to read this report and follow your analysis without guidance. In the 
+report there should be evidence of any model training done (e.g. loss graph, output logs from hyperparameter tuning), 
+along with quantitative measures or predictions of the quality of any models developed. We also expect to see some 
+process commentary, describing the quality of any initial results, refinements made, and the resulting improvement.
 
-Please log the time taken to perform the operations described, and within reason, try to optimise latency and computation resources used. Please also note the comments above with respect to the nature of work that we expect from data scientists.
+Please also log the time taken to perform the operations described, and within reason, try to optimise latency and computation resources used. Please also note the comments above with respect to the nature of work that we expect from data scientists.
 
 ### 5. Further Data Transformations (if applying for a Data Engineering Position)
 1. Create a subsample of the data by selecting all of the requests in `sr_hex.csv.gz` which are within 1 minute of the centroid of the BELLVILLE SOUTH official suburb. You may determine the centroid of the suburb by the method of your choice, but if any external data is used, your code should programmatically download and perform the centroid calculation. Please clearly document your method.
