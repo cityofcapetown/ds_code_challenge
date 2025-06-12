@@ -86,6 +86,7 @@ We have made the following datasets available (each filename is a link). These a
 * [`sr_hex_truncated.csv`](https://cct-ds-code-challenge-input-data.s3.af-south-1.amazonaws.com/sr_hex_truncated.csv) is a truncated version of `sr_hex.csv`, containing only 3 months of data.
 * [`city-hex-polygons-8.geojson`](https://cct-ds-code-challenge-input-data.s3.af-south-1.amazonaws.com/city-hex-polygons-8.geojson) contains the [H3 spatial indexing system](https://h3geo.org/) polygons and index values for the bounds of the City of Cape Town, at resolution level 8.
 * [`city-hex-polygons-8-10.geojson`](https://cct-ds-code-challenge-input-data.s3.af-south-1.amazonaws.com/city-hex-polygons-8-10.geojson) contains the [H3 spatial indexing system](https://h3geo.org/) polygons and index values for resolution levels 8, 9 and 10, for the City of Cape Town.
+* `swimming-pool-labels` (`s3://cct-ds-code-challenge-input-data.s3.af-south-1.amazonaws.com/images/swimming-pool`) contains a random sample of aerial images from Cape Town, organised into two prefixes, `yes` or `no`, corresponding to whether there is a swimming pool in the image. Within each label prefix, there is a manifest file listing all the images available, i.e. [yes](https://cct-ds-code-challenge-input-data.s3.af-south-1.amazonaws.com/images/swimming-pool/yes/manifest) and [no](https://cct-ds-code-challenge-input-data.s3.af-south-1.amazonaws.com/images/swimming-pool/no/manifest).
 
 In some of the tasks below you will be creating datasets that are similar to these, feel free to use the provided files to validate your work.
 
@@ -123,17 +124,20 @@ Please provide the following:
 The **final deliverable** is a report (in PDF form) for the Executive Management team of the City.  An Executive-level, non-specialist should be able to read the report and follow your analysis without guidance.
 
 ### 4. Predictive Analytic Tasks (if applying for a Data Science Position)
-Using the `sr_hex.csv` dataset, please chose __two__ of the following:
-1. *Time series challenge*: Predict the weekly number of expected service requests per hex that will be created each week, for the next 4 weeks.
-2. *Introspection challenge*: 
+
+Please choose __two__ of the following:
+1. *Time series challenge*: Predict the weekly number of expected service requests per hex that will be created each week using `sr_hex.csv`, for 4 weeks past the end of the dataset.
+2. *Introspection challenge*: (using `sr_hex.csv`) 
   1. Reshape the data into number of requests created, per type, per H3 level 8 hex in the last 12 months. 
   2. Choose a type, and then develop a model that predicts the number of requests of that type per hex.
   3. Use the model developed in (2) to predict the number in (1).
   4. Based upon the model, and any other analysis, determine the drivers of requests of that particular type(s).
-3. *Classification challenge*: Classify a hex as sparsely or densely populated, solely based on the service request data. Provide an explanation as to how you're using the data to perform this classification. Using your classifier, please highlight any unexpected or unusual classifications, and comment on why that might be the case.
-4. *Anomaly Detection challenge*: Reshape the data into the number of requests created per department, per day. Please identify any days in the first 6 months of 2020 where an anomalous number of requests were created for a particular department. Please describe how you would motivate to the director of that department why they should investigate that anomaly. Your argument should rely upon the contents of the dataset and/or your anomaly detection model.
+3. *Classification challenge*: Classify a hex in `sr_hex.csv` as sparsely or densely populated, solely based on the service request data. Provide an explanation as to how you're using the data to perform this classification. Using your classifier, please highlight any unexpected or unusual classifications, and comment on why that might be the case.
+4. *Anomaly Detection challenge*: Reshape the `sr_hex.csv` data into the number of requests created per department, per day. Please identify any days in the first 6 months of 2020 where an anomalous number of requests were created for a particular department. Please describe how you would motivate to the director of that department why they should investigate that anomaly. Your argument should rely upon the contents of the dataset and/or your anomaly detection model.
 2
-Feel free to use any other data you can find in the public domain, except for task (3).
+5. *Computer Vision classification challenge*: Use a sample of images from the `swimming-pool` dataset to develop a model that classifies whether an image contains a swimming pool or not. Use the provided labels to validate your model.
+
+Feel free to use any other data you can find in the public domain, except for tasks (3) and (5).
 
 **The final output of the execution of your code should be a self-contained `html` file or executed `ipynb` file that is your report.** 
  
