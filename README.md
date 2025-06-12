@@ -44,6 +44,14 @@ Requirements and notes:
 
 You can use any tool to produce the output, e.g. Python, R, Excel, Power BI, Tableau, etc. The **final deliverable needs to be a pdf report** with your analysis.
 
+### Follow-on Questions
+If we invite you to an interview, after completing and submitting this technical assessment, we will be asking follow-up 
+questions about the work submitted. These questions might be at a very detailed level, or broadly conceptual, relating to 
+the choices made in completing this assessment.
+
+We do not expect perfect recall of what you may have submitted, but we do expect a deep knowledge of the content, and 
+how it works.
+
 ## How to submit
 ### Candidates where programming is required (Data Scientist;  Engineers, Visualisation Engineers and Front End Developers)
 1. Clone this repository and load it into your development environment. 
