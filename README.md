@@ -125,16 +125,19 @@ The **final deliverable** is a report (in PDF form) for the Executive Management
 
 ### 4. Predictive Analytic Tasks (if applying for a Data Science Position)
 
-Please choose __two__ of the following:
+Please choose __one__ of the following four tasks to solve:  (for the tasks you choose to solve, we expect you to provide (1) an initial solution and (2) an improved solution of your initial solution. For both we expect the code together with evidence or images of training or inference results, e.g. metrics, loss graph, output logs from hyperparameter tuning, confusion matrixs, etc)
+
 1. *Time series challenge*: Predict the weekly number of expected service requests per hex that will be created each week using `sr_hex.csv`, for 4 weeks past the end of the dataset.
-2. *Introspection challenge*: (using `sr_hex.csv`) 
-  1. Reshape the data into number of requests created, per type, per H3 level 8 hex in the last 12 months. 
-  2. Choose a type, and then develop a model that predicts the number of requests of that type per hex.
-  3. Use the model developed in (2) to predict the number in (1).
-  4. Based upon the model, and any other analysis, determine the drivers of requests of that particular type(s).
+2. *Introspection challenge*: (using `sr_hex.csv`)    
+   2.1. Reshape the data into number of requests created, per type, per H3 level 8 hex in the last 12 months.  
+   2.2. Choose a type, and then develop a model that predicts the number of requests of that type per hex.   
+   2.3. Use the model developed in (2.2) to predict the number in (2.1).   
+   2.4. Based upon the model, and any other analysis, determine the drivers of requests of that particular type(s).   
 3. *Classification challenge*: Classify a hex in `sr_hex.csv` as sparsely or densely populated, solely based on the service request data. Provide an explanation as to how you're using the data to perform this classification. Using your classifier, please highlight any unexpected or unusual classifications, and comment on why that might be the case.
 4. *Anomaly Detection challenge*: Reshape the `sr_hex.csv` data into the number of requests created per department, per day. Please identify any days in the first 6 months of 2020 where an anomalous number of requests were created for a particular department. Please describe how you would motivate to the director of that department why they should investigate that anomaly. Your argument should rely upon the contents of the dataset and/or your anomaly detection model.
-2
+
+This task must be solved:  (we expect you to provide (1) an initial solution and (2) an improved solution of your initial solution. For both we expect the code together with evidence or images of training or inference results, e.g. metrics, loss graph, output logs from hyperparameter tuning, confusion matrixs, etc)
+
 5. *Computer Vision classification challenge*: Use a sample of images from the `swimming-pool` dataset to develop a model that classifies whether an image contains a swimming pool or not. Use the provided labels to validate your model.
 
 Feel free to use any other data you can find in the public domain, except for tasks (3) and (5).
