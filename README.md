@@ -44,6 +44,14 @@ Requirements and notes:
 
 You can use any tool to produce the output, e.g. Python, R, Excel, Power BI, Tableau, etc. The **final deliverable needs to be a pdf report** with your analysis.
 
+### Follow-on Questions
+If we invite you to an interview, after completing and submitting this technical assessment, we will be asking follow-up 
+questions about the work submitted. These questions might be at a very detailed level, or broadly conceptual, relating to 
+the choices made in completing this assessment.
+
+We do not expect perfect recall of what you may have submitted, but we do expect a deep knowledge of the content, and 
+how it works.
+
 ## How to submit
 ### Candidates where programming is required (Data Scientist;  Engineers, Visualisation Engineers and Front End Developers)
 1. Clone this repository and load it into your development environment. 
@@ -78,6 +86,7 @@ We have made the following datasets available (each filename is a link). These a
 * [`sr_hex_truncated.csv`](https://cct-ds-code-challenge-input-data.s3.af-south-1.amazonaws.com/sr_hex_truncated.csv) is a truncated version of `sr_hex.csv`, containing only 3 months of data.
 * [`city-hex-polygons-8.geojson`](https://cct-ds-code-challenge-input-data.s3.af-south-1.amazonaws.com/city-hex-polygons-8.geojson) contains the [H3 spatial indexing system](https://h3geo.org/) polygons and index values for the bounds of the City of Cape Town, at resolution level 8.
 * [`city-hex-polygons-8-10.geojson`](https://cct-ds-code-challenge-input-data.s3.af-south-1.amazonaws.com/city-hex-polygons-8-10.geojson) contains the [H3 spatial indexing system](https://h3geo.org/) polygons and index values for resolution levels 8, 9 and 10, for the City of Cape Town.
+* `swimming-pool-labels` (`s3://cct-ds-code-challenge-input-data.s3.af-south-1.amazonaws.com/images/swimming-pool`) contains a random sample of aerial images from Cape Town, organised into two prefixes, `yes` or `no`, corresponding to whether there is a swimming pool in the image. Within each label prefix, there is a manifest file listing all the images available, i.e. [yes](https://cct-ds-code-challenge-input-data.s3.af-south-1.amazonaws.com/images/swimming-pool/yes/manifest) and [no](https://cct-ds-code-challenge-input-data.s3.af-south-1.amazonaws.com/images/swimming-pool/no/manifest).
 
 In some of the tasks below you will be creating datasets that are similar to these, feel free to use the provided files to validate your work.
 
@@ -94,7 +103,7 @@ Please log the time taken to perform the operations described, and within reason
 ### 2. Initial Data Transformation (if applying for a Data Engineering, Visualisation Engineer, Front End Developer and/or Science Position)
 Join the equivalent of the contents of the file `city-hex-polygons-8.geojson` to the service request dataset, such that each service request is assigned to a single H3 resolution level 8 hexagon. Use the `sr_hex.csv.gz` file to validate your work.
 
-For any requests where the `Latitude` and `Longitude` fields are empty, set the index value to `0`.
+For any requests where the `Latitude` and `Longitude` fields are empty, set the index value to `0`. Use your judgement to include any other appropriate validation.
 
 Include logging that lets the executor know how many of the records failed to join, and include a join error threshold above which the script will error out. Please motivate why you have selected the error threshold that you have. Please also log the time taken to perform the operations described, and within reason, try to optimise latency and computational resources used.
 
@@ -115,23 +124,32 @@ Please provide the following:
 The **final deliverable** is a report (in PDF form) for the Executive Management team of the City.  An Executive-level, non-specialist should be able to read the report and follow your analysis without guidance.
 
 ### 4. Predictive Analytic Tasks (if applying for a Data Science Position)
-Using the `sr_hex.csv` dataset, please chose __two__ of the following:
-1. *Time series challenge*: Predict the weekly number of expected service requests per hex that will be created each week, for the next 4 weeks.
-2. *Introspection challenge*: 
-  1. Reshape the data into number of requests created, per type, per H3 level 8 hex in the last 12 months. 
-  2. Choose a type, and then develop a model that predicts the number of requests of that type per hex.
-  3. Use the model developed in (2) to predict the number in (1).
-  4. Based upon the model, and any other analysis, determine the drivers of requests of that particular type(s).
-3. *Classification challenge*: Classify a hex as sparsely or densely populated, solely based on the service request data. Provide an explanation as to how you're using the data to perform this classification. Using your classifier, please highlight any unexpected or unusual classifications, and comment on why that might be the case.
-4. *Anomaly Detection challenge*: Reshape the data into the number of requests created per department, per day. Please identify any days in the first 6 months of 2020 where an anomalous number of requests were created for a particular department. Please describe how you would motivate to the director of that department why they should investigate that anomaly. Your argument should rely upon the contents of the dataset and/or your anomaly detection model.
-2
-Feel free to use any other data you can find in the public domain, except for task (3).
+
+Please choose __one__ of the following four tasks to solve:  (for the tasks you choose to solve, we expect you to provide (1) an initial solution and (2) an improved solution of your initial solution. For both we expect the code together with evidence or images of training or inference results, e.g. metrics, loss graph, output logs from hyperparameter tuning, confusion matrixs, etc)
+
+1. *Time series challenge*: Predict the weekly number of expected service requests per hex that will be created each week using `sr_hex.csv`, for 4 weeks past the end of the dataset.
+2. *Introspection challenge*: (using `sr_hex.csv`)    
+   2.1. Reshape the data into number of requests created, per type, per H3 level 8 hex in the last 12 months.  
+   2.2. Choose a type, and then develop a model that predicts the number of requests of that type per hex.   
+   2.3. Use the model developed in (2.2) to predict the number in (2.1).   
+   2.4. Based upon the model, and any other analysis, determine the drivers of requests of that particular type(s).   
+3. *Classification challenge*: Classify a hex in `sr_hex.csv` as sparsely or densely populated, solely based on the service request data. Provide an explanation as to how you're using the data to perform this classification. Using your classifier, please highlight any unexpected or unusual classifications, and comment on why that might be the case.
+4. *Anomaly Detection challenge*: Reshape the `sr_hex.csv` data into the number of requests created per department, per day. Please identify any days in the first 6 months of 2020 where an anomalous number of requests were created for a particular department. Please describe how you would motivate to the director of that department why they should investigate that anomaly. Your argument should rely upon the contents of the dataset and/or your anomaly detection model.
+
+This task must be solved:  (we expect you to provide (1) an initial solution and (2) an improved solution of your initial solution. For both we expect the code together with evidence or images of training or inference results, e.g. metrics, loss graph, output logs from hyperparameter tuning, confusion matrixs, etc)
+
+5. *Computer Vision classification challenge*: Use a sample of images from the `swimming-pool` dataset to develop a model that classifies whether an image contains a swimming pool or not. Use the provided labels to validate your model.
+
+Feel free to use any other data you can find in the public domain, except for tasks (3) and (5).
 
 **The final output of the execution of your code should be a self-contained `html` file or executed `ipynb` file that is your report.** 
  
-A statistically minded layperson should be able to read this report and follow your analysis without guidance.
+A statistically minded layperson should be able to read this report and follow your analysis without guidance. In the 
+report there should be evidence of any model training done (e.g. loss graph, output logs from hyperparameter tuning), 
+along with quantitative measures or predictions of the quality of any models developed. We also expect to see some 
+process commentary, describing the quality of any initial results, refinements made, and the resulting improvement.
 
-Please log the time taken to perform the operations described, and within reason, try to optimise latency and computation resources used. Please also note the comments above with respect to the nature of work that we expect from data scientists.
+Please also log the time taken to perform the operations described, and within reason, try to optimise latency and computation resources used. Please also note the comments above with respect to the nature of work that we expect from data scientists.
 
 ### 5. Further Data Transformations (if applying for a Data Engineering Position)
 1. Create a subsample of the data by selecting all of the requests in `sr_hex.csv.gz` which are within 1 minute of the centroid of the BELLVILLE SOUTH official suburb. You may determine the centroid of the suburb by the method of your choice, but if any external data is used, your code should programmatically download and perform the centroid calculation. Please clearly document your method.
